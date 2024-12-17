@@ -1,6 +1,3 @@
-// app/blog/[slug]/page.tsx
-
-// import { useParams } from "next/navigation";
 import { posts } from "../../data/data";
 import BlurFade from "@/components/ui/blur-fade";
 import Navbar from "@/components/Navbar";
@@ -13,7 +10,9 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
-  const { slug } = await params; // Ensure params are awaited
+  // Await params to ensure it's resolved
+  const { slug } = await params; // Await params here
+
   const post = posts.find((p) => p.slug === slug);
 
   if (!post) {
@@ -40,9 +39,9 @@ export default async function BlogPostPage({
 }: {
   params: { slug: string };
 }) {
-  //   const { slug } = useParams();
+  // Await params here as well
+  const { slug } = await params; // Await params here
 
-  const { slug } = await params; // Await params here too
   const post = posts.find((p) => p.slug === slug);
 
   if (!post) {
