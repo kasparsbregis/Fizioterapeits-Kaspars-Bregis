@@ -1,6 +1,6 @@
 "use client"; // For Next.js App Router (if using client-side rendering)
 
-import { GoogleMap, useJsApiLoader, Marker } from "@react-google-maps/api";
+import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
 import React from "react";
 
 // Component Configuration
@@ -24,25 +24,17 @@ const markerOptions = {
 
 const GoogleMapComponent = () => {
   const apiKey = process.env.NEXT_PUBLIC_MAPS_API_KEY || "";
-
   if (!apiKey) {
     console.error("Google Maps API Key is missing");
-    return <div>Google Maps API Key is missing</div>; // Optional fallback UI
+    return null; // Optionally, you can show a message or fallback UI here.
   }
-
-  const { isLoaded } = useJsApiLoader({
-    googleMapsApiKey: apiKey,
-  });
-
-  if (!isLoaded) {
-    return <div>Loading...</div>; // Optional loading state
-  }
-
   return (
-    <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={18}>
-      {/* Marker for the physiotherapy cabinet */}
-      <Marker position={center} options={markerOptions} />
-    </GoogleMap>
+    <LoadScript googleMapsApiKey={apiKey}>
+      <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={18}>
+        {/* Marker for the physiotherapy cabinet */}
+        <Marker position={center} options={markerOptions} />
+      </GoogleMap>
+    </LoadScript>
   );
 };
 
