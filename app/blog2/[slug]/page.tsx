@@ -1,19 +1,15 @@
-// app/blog/[slug]/page.tsx
-
-// import { useParams } from "next/navigation";
-import { posts } from "../../data/data";
-import BlurFade from "@/components/ui/blur-fade";
-import Navbar from "@/components/Navbar";
+import { posts } from "../data";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
 
-// Server-side function to generate metadata
+// Ensure params are awaited in `generateMetadata`
 export async function generateMetadata({
   params,
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
   const { slug } = await params; // Ensure params are awaited
+
   const post = posts.find((p) => p.slug === slug);
 
   if (!post) {
@@ -35,13 +31,12 @@ export async function generateMetadata({
   };
 }
 
+// Page Component: Ensure params are awaited in the component as well
 export default async function BlogPostPage({
   params,
 }: {
   params: { slug: string };
 }) {
-  //   const { slug } = useParams();
-
   const { slug } = await params; // Await params here too
   const post = posts.find((p) => p.slug === slug);
 
@@ -51,22 +46,13 @@ export default async function BlogPostPage({
 
   return (
     <div className="flex flex-col h-screen items-center w-full text-black">
-      <Navbar />
-      <BlurFade inView delay={0.3} className="mt-24">
-        <div className="section-heading">
-          <h2 className="section-title">Blogs</h2>
-          <p className="section-description mt-5">
-            Viss par un ap fizioterapiju!
-          </p>
-        </div>
-      </BlurFade>
-      <BlurFade inView delay={0.4}>
-        <h1>{post.title}</h1>
-        <p>
-          <i>{post.date}</i>
-        </p>
+      <div className="section-heading mt-24">
+        <h1 className="font-bold">{post.title}</h1>
+        <p>{post.date}</p>
+      </div>
+      <div className="mt-6">
         <p>{post.content}</p>
-      </BlurFade>
+      </div>
     </div>
   );
 }
