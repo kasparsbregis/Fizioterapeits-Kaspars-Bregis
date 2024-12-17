@@ -23,8 +23,13 @@ const markerOptions = {
 };
 
 const GoogleMapComponent = () => {
+  const apiKey = process.env.NEXT_PUBLIC_MAPS_API_KEY || "";
+  if (!apiKey) {
+    console.error("Google Maps API Key is missing");
+    return null; // Optionally, you can show a message or fallback UI here.
+  }
   return (
-    <LoadScript googleMapsApiKey={process.env.NEXT_PUBLIC_MAPS_API_KEY}>
+    <LoadScript googleMapsApiKey={apiKey}>
       <GoogleMap mapContainerStyle={containerStyle} center={center} zoom={18}>
         {/* Marker for the physiotherapy cabinet */}
         <Marker position={center} options={markerOptions} />
