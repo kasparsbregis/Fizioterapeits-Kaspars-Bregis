@@ -25,11 +25,11 @@ const Navbar = () => {
               Pieteikties
             </Button>
           </Link>
-          <Link href={"/blog"}>
+          {/* <Link href={"/blog"}>
             <Button className="h-8 rounded-md bg-[#292929] px-3 text-xs hover:bg-[#000000] ">
               Blogs
             </Button>
-          </Link>
+          </Link> */}
           <Link href={"/"}>
             <Button
               variant={"ghost"}

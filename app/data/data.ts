@@ -5,8 +5,7 @@ export const posts = [
     slug: "diagnoze-tendinopatija",
     title: "Diagnoze - tendinopātija",
     excerpt: "Atklāšu fizioterapeitu taktiku cīņā ar tendinopātijām.",
-    content:
-      "Atklāšu fizioterapeitu taktiku cīņā ar tendinopātijām. Runāsim par biežākajām cīpslām, kas izmaina savu struktūru. Izstāsīšu atšķirības starp tendinopātiju un tendinītu.",
+    content: `Atklāšu fizioterapeitu taktiku cīņā ar tendinopātijām. Runāsim par biežākajām cīpslām, kas izmaina savu struktūru. Izstāsīšu atšķirības starp tendinopātiju un tendinītu.`,
     date: "2024.gada 16.decembris",
   },
   {

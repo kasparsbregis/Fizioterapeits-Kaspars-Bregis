@@ -10,8 +10,8 @@ const containerStyle = {
 };
 
 const center = {
-  lat: 57.158226752872295,
-  lng: 24.851429620198065,
+  lat: 57.158210092282346,
+  lng: 24.851390315319694,
 };
 
 const markerOptions = {

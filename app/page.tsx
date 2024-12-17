@@ -1,5 +1,6 @@
 import React from "react";
 
+import BlogPreview from "@/components/BlogPreview";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
@@ -36,6 +37,7 @@ const Home = () => {
       <Pricing />
       <LocationWithMarker />
       <FAQ />
+      <BlogPreview />
       <Footer />
       {/* <BottomRainbow /> */}
     </div>
