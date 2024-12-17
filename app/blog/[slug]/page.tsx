@@ -8,9 +8,9 @@ import { notFound } from "next/navigation";
 export async function generateMetadata({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }): Promise<Metadata> {
-  const { slug } = params; // No need to await params
+  const slug = (await params).slug; // No need to await params
 
   const post = posts.find((p) => p.slug === slug);
 
@@ -36,9 +36,9 @@ export async function generateMetadata({
 export default async function BlogPostPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const { slug } = params; // No need to await params
+  const slug = (await params).slug; // No need to await params
 
   const post = posts.find((p) => p.slug === slug);
 
