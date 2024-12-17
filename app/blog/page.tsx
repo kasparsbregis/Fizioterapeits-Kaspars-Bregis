@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -6,6 +7,12 @@ import BlurFade from "@/components/ui/blur-fade";
 import { MagicCard } from "@/components/ui/magic-card";
 
 import { posts } from "../data/data";
+
+export const metadata: Metadata = {
+  title: "Blogs || Fizioterapeits Kaspars Breģis",
+  description: "Sertificēts fizioterapeits Siguldā",
+};
+
 export default function BlogIndexPage() {
   return (
     <div className="flex h-screen w-full flex-col items-center text-black">
