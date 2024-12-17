@@ -1,13 +1,15 @@
-import React from "react";
-import { BentoGrid, BentoCard } from "./ui/bento-grid";
 import { HandIcon } from "@radix-ui/react-icons";
-import BlurFade from "./ui/blur-fade";
 import {
   CircleDotIcon,
   ClipboardPenIcon,
   DumbbellIcon,
   Scissors,
 } from "lucide-react";
+import React from "react";
+
+import { BentoGrid, BentoCard } from "./ui/bento-grid";
+import BlurFade from "./ui/blur-fade";
+
 const features = [
   {
     Icon: ClipboardPenIcon,
@@ -69,10 +71,10 @@ const Services = async () => {
     <BlurFade
       inView
       delay={0.35}
-      className="pb-40 w-full flex flex-col items-center tracking-wider mt-24"
+      className="mt-24 flex w-full flex-col items-center pb-40 tracking-wider"
     >
       <h2 className="section-title">Pakalpojumi</h2>
-      <div className="max-w-7xl mt-6 px-6">
+      <div className="mt-6 max-w-7xl px-6">
         <BentoGrid className="lg:grid-rows-3">
           {features.map((feature) => (
             <BentoCard key={feature.name} {...feature} />

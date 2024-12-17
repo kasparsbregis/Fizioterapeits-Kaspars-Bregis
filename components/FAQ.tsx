@@ -6,6 +6,7 @@ import {
 } from "@radix-ui/react-accordion";
 import { ArrowDownIcon } from "lucide-react";
 import React from "react";
+
 import BlurFade from "./ui/blur-fade";
 
 const FAQ = () => {
@@ -22,12 +23,12 @@ const FAQ = () => {
         <Accordion
           type="single"
           collapsible
-          className="w-full flex flex-col gap-6"
+          className="flex w-full flex-col gap-6"
         >
           <AccordionItem value="item-1" className="border-b border-black">
             <AccordionTrigger className="w-full">
-              <div className="flex justify-between items-center gap-6">
-                <p className="font-bold text-left">
+              <div className="flex items-center justify-between gap-6">
+                <p className="text-left font-bold">
                   Vai es sadarbojos ar veselības apdrošināšanas polisēm?
                 </p>
                 <ArrowDownIcon size={16} />
@@ -61,8 +62,8 @@ const FAQ = () => {
           </AccordionItem>
           <AccordionItem value="item-2" className="border-b border-black">
             <AccordionTrigger className="w-full">
-              <div className="flex justify-between items-center gap-6">
-                <p className="font-bold text-left">
+              <div className="flex items-center justify-between gap-6">
+                <p className="text-left font-bold">
                   Vai es strādāju ar bērniem?
                 </p>
                 <ArrowDownIcon size={16} />
@@ -74,8 +75,8 @@ const FAQ = () => {
           </AccordionItem>
           <AccordionItem value="item-3" className="border-b border-black">
             <AccordionTrigger className="w-full">
-              <div className="flex justify-between items-center gap-6">
-                <p className="font-bold text-left">Kāds ir mans darba laiks?</p>
+              <div className="flex items-center justify-between gap-6">
+                <p className="text-left font-bold">Kāds ir mans darba laiks?</p>
                 <ArrowDownIcon size={16} />
               </div>
             </AccordionTrigger>
@@ -108,8 +109,8 @@ const FAQ = () => {
           </AccordionItem>
           <AccordionItem value="item-4" className="border-b border-black">
             <AccordionTrigger className="w-full">
-              <div className="flex justify-between items-center gap-6">
-                <p className="font-bold text-left">
+              <div className="flex items-center justify-between gap-6">
+                <p className="text-left font-bold">
                   Vai var norēķināties ar karti?
                 </p>
                 <ArrowDownIcon size={16} />

@@ -1,12 +1,14 @@
+import Image from "next/image";
+import Link from "next/link";
+
 import Navbar from "@/components/Navbar";
 import BlurFade from "@/components/ui/blur-fade";
 import { MagicCard } from "@/components/ui/magic-card";
-import Image from "next/image";
-import Link from "next/link";
+
 import { posts } from "../data/data";
 export default function BlogIndexPage() {
   return (
-    <div className="flex flex-col h-screen items-center w-full text-black">
+    <div className="flex h-screen w-full flex-col items-center text-black">
       <Navbar />
       <BlurFade inView delay={0.3} className="mt-24">
         <div className="section-heading">
@@ -22,9 +24,9 @@ export default function BlogIndexPage() {
             <li key={post.slug}>
               <BlurFade inView delay={0.4}>
                 <Link href={`/blog/${post.slug}`}>
-                  <div className="flex h-[250px] w-full max-w-4xl flex-col lg:h-[150px] lg:flex-row px-6 mb-6">
+                  <div className="mb-6 flex h-[250px] w-full max-w-4xl flex-col px-6 lg:h-[150px] lg:flex-row">
                     <MagicCard
-                      className="cursor-pointer flex items-center shadow-2xl  px-2"
+                      className="flex cursor-pointer items-center px-2  shadow-2xl"
                       gradientColor={"#D9D9D955"}
                     >
                       <div className="flex items-center">
@@ -35,9 +37,9 @@ export default function BlogIndexPage() {
                           height={60}
                           className="max-w-[80px]"
                         />
-                        <div className="flex flex-col px-4 gap-2">
+                        <div className="flex flex-col gap-2 px-4">
                           <h1 className="font-bold">{post.title}</h1>
-                          <p className="break-words flex text-justify">
+                          <p className="flex break-words text-justify">
                             {post.content}
                           </p>
                           <p className="text-sm">{post.date}</p>

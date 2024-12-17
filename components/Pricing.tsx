@@ -1,9 +1,12 @@
 "use client";
-import { twMerge } from "tailwind-merge";
 import { motion } from "framer-motion";
 import { WatchIcon } from "lucide-react";
-import BlurFade from "./ui/blur-fade";
+import { twMerge } from "tailwind-merge";
+
 import { cn } from "@/lib/utils";
+
+import BlurFade from "./ui/blur-fade";
+
 const pricingTiers = [
   {
     title: "Konsultācija",
@@ -41,7 +44,7 @@ const pricingTiers = [
 
 export const Pricing = () => {
   return (
-    <section className="pt-24 md:pt-40 w-full flex flex-col items-center">
+    <section className="flex w-full flex-col items-center pt-24 md:pt-40">
       <div className="container max-w-7xl px-6">
         <BlurFade inView delay={0.3}>
           <div className="section-heading">
@@ -52,7 +55,7 @@ export const Pricing = () => {
           </div>
         </BlurFade>
         <BlurFade inView delay={0.4} className="">
-          <div className="flex flex-col gap-6 items-center mt-10 lg:flex-row lg:items-end lg:justify-center">
+          <div className="mt-10 flex flex-col items-center gap-6 lg:flex-row lg:items-end lg:justify-center">
             {pricingTiers.map(
               (
                 { title, monthlyPrice, buttonText, popular, inverse, features },
@@ -75,7 +78,7 @@ export const Pricing = () => {
                       {title}
                     </h3>
                     {popular === true && (
-                      <div className="inline-flex text-xs px-2 py-1.5 rounded-xl border border-white/20">
+                      <div className="inline-flex rounded-xl border border-white/20 px-2 py-1.5 text-xs">
                         <motion.span
                           animate={{
                             backgroundPositionX: "100%",
@@ -86,14 +89,14 @@ export const Pricing = () => {
                             ease: "linear",
                             repeatType: "mirror",
                           }}
-                          className="bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF)] [background-size:200%] text-transparent bg-clip-text font-medium"
+                          className="bg-[linear-gradient(to_right,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF,#DD7DDF,#E1CD86,#BBCB92,#71C2EF,#3BFFFF)] bg-clip-text font-medium text-transparent [background-size:200%]"
                         >
                           Populārs!
                         </motion.span>
                       </div>
                     )}
                   </div>
-                  <div className="flex items-baseline gap-1 mt-[30px]">
+                  <div className="mt-[30px] flex items-baseline gap-1">
                     <span
                       className={cn(
                         "text-4xl font-bold tracking-tighter leading-none",
@@ -112,10 +115,10 @@ export const Pricing = () => {
                   >
                     {buttonText}
                   </button>
-                  <ul className="flex flex-col gap-5 mt-8">
+                  <ul className="mt-8 flex flex-col gap-5">
                     {features.map((feature, i) => (
-                      <li key={i} className="text-sm flex items-center gap-4">
-                        <WatchIcon className="h-6 w-6" />
+                      <li key={i} className="flex items-center gap-4 text-sm">
+                        <WatchIcon className="size-6" />
                         <span>{feature}</span>
                       </li>
                     ))}

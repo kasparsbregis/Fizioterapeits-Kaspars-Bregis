@@ -1,19 +1,18 @@
 import React from "react";
 
-import Navbar from "@/components/Navbar";
+import FAQ from "@/components/FAQ";
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
-import BottomRainbow from "@/components/BottomRainbow";
+import LocationWithMarker from "@/components/Location";
+import Navbar from "@/components/Navbar";
 import { Pricing } from "@/components/Pricing";
+import { BentoServices } from "@/components/ui/BentoServices";
 import DotPattern from "@/components/ui/dot-pattern";
 import { cn } from "@/lib/utils";
-import { BentoServices } from "@/components/ui/BentoServices";
-import FAQ from "@/components/FAQ";
-import LocationWithMarker from "@/components/Location";
-import Footer from "@/components/Footer";
 
 const Home = () => {
   return (
-    <div className="flex flex-col h-screen items-center w-full text-black">
+    <div className="flex h-screen w-full flex-col items-center text-black">
       <Navbar />
       {/* <Particles
         className="absolute inset-0 bg-transparent z-10"

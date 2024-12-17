@@ -10,13 +10,13 @@ export default function HeroTextFade() {
           <span className="text-orange-600"> Kaspars Breģis</span>
         </h2>
       </BlurFade>
-      <span className="flex text-base font-medium text-center pt-10 max-w-[350px]">
+      <span className="flex max-w-[350px] pt-10 text-center text-base font-medium">
         Pieredze darbā slimnīcā (traumatoloģija, neiroloģija), kā arī sportā
         (futbols). Šobrīd ikdienā darbs ambulatorā praksē
       </span>
       <div className="flex gap-2 pt-20 sm:gap-5">
         <Button className="sm:h-10 sm:rounded-md sm:px-8">CV</Button>
-        <Button className="sm:h-10 sm:rounded-md sm:px-8 bg-orange-600 hover:bg-orange-700">
+        <Button className="bg-orange-600 hover:bg-orange-700 sm:h-10 sm:rounded-md sm:px-8">
           Pieraksts
         </Button>
         <Button className="sm:h-10 sm:rounded-md sm:px-8">Online</Button>

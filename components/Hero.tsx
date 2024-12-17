@@ -1,22 +1,23 @@
 "use client";
 
+import Image from "next/image";
+
 import HeroButton from "./HeroButton";
 import BlurFade from "./ui/blur-fade";
 import { Button } from "./ui/button";
-import Image from "next/image";
 
 const Hero = () => {
   return (
-    <div className="w-full relative flex flex-col items-center mx-auto">
-      <section className="z-30 relative flex flex-col items-center text-[#292929]">
+    <div className="relative mx-auto flex w-full flex-col items-center">
+      <section className="relative z-30 flex flex-col items-center text-[#292929]">
         <BlurFade delay={0.25}>
           <HeroButton />
         </BlurFade>
         <BlurFade delay={0.3}>
-          <div className="flex flex-col text-center mt-10 px-4 items-center justify-end ">
+          <div className="mt-10 flex flex-col items-center justify-end px-4 text-center ">
             <div className=" absolute w-[350px] sm:w-[450px] lg:w-[500px] xl:w-[700px]">
               <BlurFade delay={0.5}>
-                <h2 className="text-4xl font-bold tracking-tighter text-[#292929] sm:text-5xl xl:text-7xl/none drop-shadow-xl bg-white/50 rounded-xl py-2 px-2">
+                <h2 className="rounded-xl bg-white/50 p-2 text-4xl font-bold tracking-tighter text-[#292929] drop-shadow-xl sm:text-5xl xl:text-7xl/none">
                   <span className="text-[#f5712c]">Breģis Kaspars </span>
                   fizioterapeita prakse
                 </h2>
@@ -34,27 +35,27 @@ const Hero = () => {
           </div>
         </BlurFade>
         <BlurFade delay={0.35}>
-          <span className="flex text-lg lg:text-xl font-medium text-center pt-10 max-w-[350px] md:max-w-[650px]">
+          <span className="flex max-w-[350px] pt-10 text-center text-lg font-medium md:max-w-[650px] lg:text-xl">
             Pieredze darbā slimnīcā, rehabilitācijas nodaļā (traumatoloģija,
             neiroloģija), kā arī sportā (futbols)
           </span>
         </BlurFade>
         <div className="flex gap-2 pt-16 sm:gap-5">
           <BlurFade delay={0.4}>
-            <Button className="bg-[#292929] hover:bg-[#000000] h-8 rounded-md px-3 text-xs ">
+            <Button className="h-8 rounded-md bg-[#292929] px-3 text-xs hover:bg-[#000000] ">
               Pieteikties
             </Button>
           </BlurFade>
           <BlurFade delay={0.43}>
             <Button
               variant={"ghost"}
-              className=" h-8 rounded-md px-3 text-xs border border-[#f5712c] hover:bg-[#f5712c] text-[#f5712c] hover:text-white"
+              className=" h-8 rounded-md border border-[#f5712c] px-3 text-xs text-[#f5712c] hover:bg-[#f5712c] hover:text-white"
             >
               Online
             </Button>
           </BlurFade>
           <BlurFade delay={0.46}>
-            <Button className="bg-[#292929] hover:bg-[#000000] h-8 rounded-md px-3 text-xs ">
+            <Button className="h-8 rounded-md bg-[#292929] px-3 text-xs hover:bg-[#000000] ">
               CV
             </Button>
           </BlurFade>

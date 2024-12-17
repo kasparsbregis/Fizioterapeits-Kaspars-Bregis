@@ -2,20 +2,21 @@
 import { motion } from "framer-motion";
 import Image from "next/image";
 import React from "react";
+
 import BlurFade from "./ui/blur-fade";
 const LogoTicker = () => {
   return (
     <BlurFade
       inView
       delay={0.4}
-      className="w-full items-center flex flex-col px-6 md:max-w-7xl mt-24 md:mt-40"
+      className="mt-24 flex w-full flex-col items-center px-6 md:mt-40 md:max-w-7xl"
     >
       <h2 className="section-title">Sadarbības partneri</h2>
-      <div className="mt-6 py-4 md:py-8 bg-white rounded-xl max-w-[380px] sm:max-w-[600px] md:max-w-7xl">
+      <div className="mt-6 max-w-[380px] rounded-xl bg-white py-4 sm:max-w-[600px] md:max-w-7xl md:py-8">
         <div className="container">
           <div className="flex overflow-hidden [mask-image:linear-gradient(to_right,transparent,black,transparent)]">
             <motion.div
-              className="flex gap-14 flex-none pr-14 "
+              className="flex flex-none gap-14 pr-14 "
               animate={{ translateX: "-50%" }}
               transition={{
                 duration: 12,
@@ -66,7 +67,7 @@ const LogoTicker = () => {
                 width={240}
                 height={60}
               />
-              {/* DUPLICATE IMAGES FOR INFITE SCROLL*/}
+              {/* DUPLICATE IMAGES FOR INFITE SCROLL */}
               <Image
                 src={"/GitHub.png"}
                 alt="GitHub logo"
