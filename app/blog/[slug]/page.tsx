@@ -10,7 +10,7 @@ export async function generateMetadata({
 }: {
   params: { slug: string };
 }): Promise<Metadata> {
-  const { slug } = await params; // No need to await params
+  const { slug } = params; // No need to await params
 
   const post = posts.find((p) => p.slug === slug);
 
@@ -38,7 +38,7 @@ export default async function BlogPostPage({
 }: {
   params: { slug: string };
 }) {
-  const { slug } = await params; // No need to await params
+  const { slug } = params; // No need to await params
 
   const post = posts.find((p) => p.slug === slug);
 
