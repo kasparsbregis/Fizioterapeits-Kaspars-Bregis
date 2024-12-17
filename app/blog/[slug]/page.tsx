@@ -1,8 +1,10 @@
-import { posts } from "../../data/data";
-import BlurFade from "@/components/ui/blur-fade";
-import Navbar from "@/components/Navbar";
 import { Metadata } from "next";
 import { notFound } from "next/navigation";
+
+import Navbar from "@/components/Navbar";
+import BlurFade from "@/components/ui/blur-fade";
+
+import { posts } from "../../data/data";
 
 // Server-side function to generate metadata
 export async function generateMetadata({
@@ -47,7 +49,7 @@ export default async function BlogPostPage({
   }
 
   return (
-    <div className="flex flex-col h-screen items-center w-full text-black">
+    <div className="flex h-screen w-full flex-col items-center text-black">
       <Navbar />
       <BlurFade inView delay={0.3} className="mt-24">
         <div className="section-heading">

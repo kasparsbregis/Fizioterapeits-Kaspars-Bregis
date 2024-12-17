@@ -1,7 +1,7 @@
 "use client"; // For Next.js App Router (if using client-side rendering)
 
-import React from "react";
 import { GoogleMap, LoadScript, Marker } from "@react-google-maps/api";
+import React from "react";
 
 // Component Configuration
 const containerStyle = {

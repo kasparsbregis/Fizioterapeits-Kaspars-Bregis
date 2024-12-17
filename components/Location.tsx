@@ -1,10 +1,11 @@
 import React from "react";
-import BlurFade from "./ui/blur-fade";
+
 import GoogleMapComponent from "./Map";
+import BlurFade from "./ui/blur-fade";
 
 const LocationWithMarker = () => {
   return (
-    <section className="pt-24 md:pt-40 w-full flex flex-col items-center">
+    <section className="flex w-full flex-col items-center pt-24 md:pt-40">
       <BlurFade inView delay={0.3}>
         <div className="section-heading">
           <h2 className="section-title">Lokācija</h2>
@@ -13,8 +14,8 @@ const LocationWithMarker = () => {
           </p>
         </div>
       </BlurFade>
-      <div className="w-full mt-10 px-6 max-w-7xl">
-        <BlurFade inView delay={0.5} className="rounded-lg overflow-hidden">
+      <div className="mt-10 w-full max-w-7xl px-6">
+        <BlurFade inView delay={0.5} className="overflow-hidden rounded-lg">
           <GoogleMapComponent />
         </BlurFade>
       </div>
