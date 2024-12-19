@@ -2,6 +2,7 @@ import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
+import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import BlurFade from "@/components/ui/blur-fade";
 import { MagicCard } from "@/components/ui/magic-card";
@@ -89,6 +90,7 @@ export default function BlogIndexPage() {
           </div>
         </MagicCard>
       </div> */}
+      <Footer />
     </div>
   );
 }
