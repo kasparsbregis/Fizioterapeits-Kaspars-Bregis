@@ -1,0 +1,65 @@
+import Image from "next/image";
+import React from "react";
+
+import Navbar from "@/components/Navbar";
+import BlurFade from "@/components/ui/blur-fade";
+
+const Konsultacija = () => {
+  return (
+    <div className="flex h-screen w-full flex-col items-center text-[#292929]">
+      <Navbar />
+      <BlurFade inView delay={0.4} className="mt-24 items-center">
+        <div className="section-heading max-w-7xl px-6">
+          <h2 className="section-title tracking-tight md:text-[40px]">
+            Fizioterapeita konsultācija
+          </h2>
+          {/* <p className="section-description mt-5">Kā tas notiek?</p> */}
+        </div>
+      </BlurFade>
+      <BlurFade
+        inView
+        delay={0.5}
+        className="mt-6 flex max-w-7xl flex-col items-center px-6"
+      >
+        <Image
+          src="/konsultacija.png"
+          alt="Fizioterapeita konsultācija"
+          width={800}
+          height={60}
+          className="rounded-xl"
+        />
+        <h1 className="mt-2 text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E]">
+          Šis process iedalās 5 posmos:
+        </h1>
+        <div className="mt-8 flex max-w-3xl flex-col gap-3">
+          <h1 className="text-[22px] leading-[30px] tracking-tight text-[#010D3E]">
+            1. Anamnēzes ievākšana
+          </h1>
+          <p>
+            Fizioterapeits Jums uzdos jautājumus saistībā ar problēmu. Kur sāp?
+            Kad sāp? Kādās kustībās sāp? Vai ir kādas darbības, kas atvieglo
+            sāpes? Cik sen jau sāp? Vai ir bijušas šādas epizodes jau iepriekš?
+          </p>
+        </div>
+        <div className="mt-8 flex max-w-3xl flex-col gap-3">
+          <h1 className="text-[22px] leading-[30px] tracking-tight text-[#010D3E]">
+            2. Fizioterapijas testi
+          </h1>
+          <p>
+            Pēc anamnēzes ievākšanas fizioterapeits var izvērtēt Jūsu stāju, lai
+            izvērtētu, kādā stāvoklī ir Jūsu muskuļi. Ja ir ievērojamas stājas
+            izmaiņas (piemēram, viens plecs augstāk par otru, iegurņa rotācija,
+            utt.), tad fizioterapeits to sev piefiksē, ka šim cilvēkam ir
+            muskuļu disbalanss.
+          </p>
+          <p>
+            Kad stāja ir izvērtēta, fizioterapeits var palūgt Jūs apgulties uz
+            kušetes (masāžas galda), lai sāktu testēt muskuļus izolētāk.
+          </p>
+        </div>
+      </BlurFade>
+    </div>
+  );
+};
+
+export default Konsultacija;
