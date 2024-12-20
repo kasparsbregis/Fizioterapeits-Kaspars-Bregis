@@ -3,19 +3,19 @@ import Link from "next/link";
 import React from "react";
 
 import Footer from "@/components/Footer";
-import { KonsultacijaPricing } from "@/components/KonsultacijaPricing";
 import Navbar from "@/components/Navbar";
+import { TeiposanaPricing } from "@/components/TeiposanaPricing";
 import BlurFade from "@/components/ui/blur-fade";
 import { Button } from "@/components/ui/button";
 
-const Konsultacija = () => {
+const Teiposana = () => {
   return (
     <div className="flex h-screen w-full flex-col items-center text-[#292929]">
       <Navbar />
       <BlurFade inView delay={0.4} className="mt-24 items-center">
         <div className="section-heading max-w-7xl px-6">
           <h2 className="section-title tracking-tight md:text-[40px]">
-            Fizioterapeita konsultācija
+            Kinezioloģiskā teipošana
           </h2>
           {/* <p className="section-description mt-5">Kā tas notiek?</p> */}
         </div>
@@ -26,61 +26,53 @@ const Konsultacija = () => {
         className="mt-6 flex max-w-7xl flex-col items-center px-6"
       >
         <Image
-          src="/konsultacija.png"
-          alt="Fizioterapeita konsultācija"
+          src="/teiposana.png"
+          alt="Kinezioloģiskā teipošana"
           width={800}
           height={60}
           className="rounded-xl"
         />
         <h1 className="mt-2 text-center text-[22px] leading-[30px] tracking-tight text-[#010D3E]">
-          Šis process iedalās 3 posmos:
+          Kādos gadījumos teipošana var noderēt?
         </h1>
         <div className="mt-8 flex max-w-3xl flex-col gap-3">
           <h1 className="text-[22px] leading-[30px] tracking-tight text-[#010D3E]">
-            1. Anamnēzes ievākšana
+            Muguras sāpes
           </h1>
           <p>
-            Fizioterapeits Jums uzdos jautājumus saistībā ar problēmu. Kur sāp?
-            Kad sāp? Kādās kustībās sāp? Vai ir kādas darbības, kas atvieglo
-            sāpes? Cik sen jau sāp? Vai ir bijušas šādas epizodes jau iepriekš?
+            Nav svarīgi, vai tā ir mugurkaula kakla, krūšu vai jostas daļa,
+            teipošana var labi palīdzēt muskuļu tonusa regulēšanai, lai dotu
+            atbalstu konkrētajam mugurkaula segmentam.
           </p>
         </div>
         <div className="mt-8 flex max-w-3xl flex-col gap-3">
           <h1 className="text-[22px] leading-[30px] tracking-tight text-[#010D3E]">
-            2. Fizioterapijas testi
+            Tūska
           </h1>
           <p>
-            Pēc anamnēzes ievākšanas fizioterapeits var izvērtēt Jūsu stāju, lai
-            izvērtētu, kādā stāvoklī ir Jūsu muskuļi. Ja ir ievērojamas stājas
-            izmaiņas (piemēram, viens plecs augstāk par otru, iegurņa rotācija,
-            utt.), tad fizioterapeits to sev piefiksē, ka šim cilvēkam ir
-            muskuļu disbalanss.
-          </p>
-          <p>
-            Kad stāja ir izvērtēta, fizioterapeits var palūgt Jūs apgulties uz
-            kušetes (masāžas galda), lai sāktu testēt muskuļus izolētāk.
-            Visbiežāk sāk ar kustību amplitūdu locītavās, bet pēc tam - muskuļu
-            spēks. Visbiežāk tiks tekstēti muskuļi, kas ir apkārt locītavām,
-            kuras ir tuvāk problēmzonai. Fizioterapeits var veikt arī
-            specifiskus fizioterapijas testus konkrētu diagnožu izslēgšanai.
-            Piemēram, var veikt &quot;tukšas bundžas&quot; (empty can) testu,
-            lai notestētu, vai pie pleca problēmas ir aktuāls muskuļa
-            supraspinatus bojājums.
+            Savā pieredzē novērots, ka pret tūsku ļoti efektīvi strādā
+            teipošana. Svarīga ir teipošanas tehnika, lai uzlabotu limfas
+            atteci, tādā veidā arī novadīt iekaisīgos procesus uz limfmezgliem
+            un pēc tam uz izvadkanāliem.
           </p>
         </div>
         <div className="mt-8 flex max-w-3xl flex-col gap-3">
           <h1 className="text-[22px] leading-[30px] tracking-tight text-[#010D3E]">
-            3. Fizioterapijas plāna izstrāde
+            Locītavu stabilizācija
           </h1>
           <p>
-            Brīdī, kad cilvēks ir izjautāts un fizioterapijas veikti,
-            fizioterapeits ar Jums izrunās iespējamos problēmas cēloņus un
-            piedāvās savu redzējumu tā ārstēšanai. Visbiežāk tas ir vingrošanas
-            kurss vai masāžas kurss, vai vingrošanas+masāžas kurss.
+            Kinezioloģiskais teips kvalitatīvi stabilizē locītavas, lai mazinātu
+            traumu risku, īpaši kontakta sporta veidos (futbols, basketbols,
+            u.c.). Tas, protams, nav ilgtermiņa risinājums, muskuļiem ir jāspēj
+            nodrošināt locītavas stabilitāte slodzē, kas organismam tiek
+            piedāvāta. Teipošana locītavu stabilitātei ir vairāk kā atbalsts
+            konkrētam treniņam vai sacensībām. No locītavu veselības viedokļa
+            skatoties, nav ieteicams bieži teipot locītavas stabilitātes
+            uzlabošanai, bet kā palīgs konkrētām sacensībām ir ļoti labs!
           </p>
         </div>
         <div className="mt-8 flex max-w-3xl gap-3">
-          <KonsultacijaPricing />
+          <TeiposanaPricing />
         </div>
         <div className="mt-8 flex max-w-3xl gap-3">
           <BlurFade delay={0.43}>
@@ -107,4 +99,4 @@ const Konsultacija = () => {
   );
 };
 
-export default Konsultacija;
+export default Teiposana;

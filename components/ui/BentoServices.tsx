@@ -37,7 +37,8 @@ const features = [
   {
     Icon: CalendarIcon,
     name: "Teipošana",
-    description: "Use the calendar to filter your files by date.",
+    description:
+      "Muskuļu tonusa korekcija, locītavu stabilizācija, tūskas mazināšana",
     className:
       "col-span-3 lg:col-span-1 bg-[url('/teiposana.png')] bg-cover bg-center",
     href: "/teiposana",
