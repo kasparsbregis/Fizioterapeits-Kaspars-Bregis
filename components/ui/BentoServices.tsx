@@ -50,7 +50,7 @@ export function BentoServices() {
   return (
     <BlurFade
       inView
-      delay={0.35}
+      delay={0.1}
       className="w-full flex flex-col items-center tracking-wider mt-24 md:mt-40"
     >
       <h2 className="section-title ">Pakalpojumi</h2>

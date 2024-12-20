@@ -1,17 +1,19 @@
 "use client";
 import { motion } from "framer-motion";
 import { WatchIcon } from "lucide-react";
+import Link from "next/link";
 import { twMerge } from "tailwind-merge";
 
 import { cn } from "@/lib/utils";
 
 import BlurFade from "./ui/blur-fade";
+import { Button } from "./ui/button";
 
 const pricingTiers = [
   {
     title: "Konsultācija",
     monthlyPrice: "30",
-    buttonText: "Pierakstīties",
+    buttonText: "Pieteikties",
     popular: false,
     inverse: false,
     features: ["Līdz 60min"],
@@ -19,7 +21,7 @@ const pricingTiers = [
   {
     title: "Vingrošana",
     monthlyPrice: "15-20",
-    buttonText: "Pierakstīties",
+    buttonText: "Pieteikties",
     popular: false,
     inverse: false,
     features: ["30min vai 50min"],
@@ -27,7 +29,7 @@ const pricingTiers = [
   {
     title: "Masāža",
     monthlyPrice: "20-30",
-    buttonText: "Pierakstīties",
+    buttonText: "Pieteikties",
     popular: true,
     inverse: true,
     features: ["30min, 40min vai 50min"],
@@ -35,7 +37,7 @@ const pricingTiers = [
   {
     title: "Teipošana",
     monthlyPrice: "Līdz 20",
-    buttonText: "Pierakstīties",
+    buttonText: "Pieteikties",
     popular: false,
     inverse: false,
     features: ["Līdz 30min"],
@@ -46,7 +48,7 @@ export const Pricing = () => {
   return (
     <section className="flex w-full flex-col items-center pt-24 md:pt-40">
       <div className="container max-w-7xl px-6">
-        <BlurFade inView delay={0.3}>
+        <BlurFade inView delay={0.1}>
           <div className="section-heading">
             <h2 className="section-title">Cenrādis</h2>
             <p className="section-description mt-5">
@@ -54,7 +56,7 @@ export const Pricing = () => {
             </p>
           </div>
         </BlurFade>
-        <BlurFade inView delay={0.4} className="">
+        <BlurFade inView delay={0.15} className="">
           <div className="mt-10 flex flex-col items-center gap-6 lg:flex-row lg:items-end lg:justify-center">
             {pricingTiers.map(
               (
@@ -127,6 +129,17 @@ export const Pricing = () => {
               )
             )}
           </div>
+        </BlurFade>
+        <BlurFade
+          inView
+          delay={0.2}
+          className="mt-20 flex w-full flex-col items-center"
+        >
+          <Link href={"/cenradis"}>
+            <Button className="bg-[#292929] hover:bg-black">
+              Aplūkot pilnu cenrādi
+            </Button>
+          </Link>
         </BlurFade>
       </div>
     </section>

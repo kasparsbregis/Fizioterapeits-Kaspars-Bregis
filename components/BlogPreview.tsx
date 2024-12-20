@@ -9,7 +9,7 @@ import { MagicCard } from "./ui/magic-card";
 const BlogPreview = () => {
   return (
     <div className="flex w-full max-w-7xl flex-col items-center px-6 pt-24 md:pt-40">
-      <BlurFade inView delay={0.3}>
+      <BlurFade inView delay={0.1}>
         <div className="section-heading">
           <h2 className="section-title">Blogs</h2>
           <p className="section-description mt-5">
@@ -17,7 +17,7 @@ const BlogPreview = () => {
           </p>
         </div>
       </BlurFade>
-      <BlurFade inView delay={0.3}>
+      <BlurFade inView delay={0.15}>
         <div className="mt-16">
           <ul>
             <li>
@@ -54,8 +54,8 @@ const BlogPreview = () => {
         </div>
       </BlurFade>
       <Link href={"/blog"}>
-        <BlurFade inView delay={0.3}>
-          <Button variant={"default"} className="mt-6">
+        <BlurFade inView delay={0.2}>
+          <Button className="mt-6 bg-[#292929] hover:bg-black">
             Aplūkot visus bloga ierakstus
           </Button>
         </BlurFade>

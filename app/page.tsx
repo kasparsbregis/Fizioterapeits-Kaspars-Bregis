@@ -1,6 +1,6 @@
 import React from "react";
 
-import BlogPreview from "@/components/BlogPreview";
+import CallToAction from "@/components/CallToAction";
 import FAQ from "@/components/FAQ";
 import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
@@ -37,7 +37,8 @@ const Home = () => {
       <Pricing />
       <LocationWithMarker />
       <FAQ />
-      <BlogPreview />
+      {/* <BlogPreview /> */}
+      <CallToAction />
       <Footer />
       {/* <BottomRainbow /> */}
     </div>

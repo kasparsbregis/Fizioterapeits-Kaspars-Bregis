@@ -7,7 +7,7 @@ import { Button } from "./ui/button";
 const Navbar = () => {
   return (
     <BlurFade
-      delay={0.25}
+      delay={0.15}
       inView
       className="fixed z-50 h-14 w-full items-center border-b border-black/20 bg-[#ceecea]/40 text-black backdrop-blur-lg"
     >
@@ -25,19 +25,15 @@ const Navbar = () => {
               Pieteikties
             </Button>
           </Link>
-          {/* <Link href={"/blog"}>
-            <Button className="h-8 rounded-md bg-[#292929] px-3 text-xs hover:bg-[#000000] ">
-              Blogs
-            </Button>
-          </Link> */}
-          <Link href={"/"}>
+
+          {/* <Link href={"/"}>
             <Button
               variant={"ghost"}
               className="h-8 rounded-md border border-[#f5712c] px-3 text-xs text-[#f5712c] hover:bg-[#f5712c] hover:text-white"
             >
               Online
             </Button>
-          </Link>
+          </Link> */}
         </div>
       </div>
     </BlurFade>

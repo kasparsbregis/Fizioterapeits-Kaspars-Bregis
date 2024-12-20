@@ -12,14 +12,10 @@ import BlurFade from "./ui/blur-fade";
 const FAQ = () => {
   return (
     <div className="w-full max-w-7xl px-6 pt-24 md:pt-40">
-      <BlurFade inView delay={0.35}>
-        <h2 className="section-title ">Biežāk uzdotie jautājumi</h2>
-        <p className="section-description mt-5 pb-6 md:pb-12">
-          Ja nevariet atrast atbildi uz savu jautājumu, meklējiet atbildi
-          googlē.
-        </p>
+      <BlurFade inView delay={0.1}>
+        <h2 className="section-title mb-10">Biežāk uzdotie jautājumi</h2>
       </BlurFade>
-      <BlurFade inView delay={0.4}>
+      <BlurFade inView delay={0.15}>
         <Accordion
           type="single"
           collapsible
