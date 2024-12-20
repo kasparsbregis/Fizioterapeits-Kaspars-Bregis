@@ -52,7 +52,7 @@ const BentoCard = ({
     )}
   >
     <div>{background}</div>
-    <div className="pointer-events-none z-10 flex md:transform-gpu flex-col gap-1 p-6 md:transition-all duration-300 md:group-hover:-translate-y-10">
+    <div className="pointer-events-none z-10 flex lg:transform-gpu flex-col gap-1 p-6 lg:transition-all duration-300 lg:group-hover:-translate-y-10">
       <div className="bg-white/60 p-2 rounded-md w-full mx-auto">
         <h3 className="text-lg font-semibold text-[#292929] dark:text-neutral-300">
           {name}
