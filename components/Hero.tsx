@@ -58,9 +58,11 @@ const Hero = () => {
             </Button>
           </BlurFade> */}
           <BlurFade delay={0.2}>
-            <Button className="rounded-md bg-[#292929] px-6 py-4 text-base hover:bg-[#000000] ">
-              Par mani
-            </Button>
+            <Link href={"/par-mani"}>
+              <Button className="rounded-md bg-[#292929] px-6 py-4 text-base hover:bg-[#000000] ">
+                Par mani
+              </Button>
+            </Link>
           </BlurFade>
         </div>
         {/* <div className="mt-16 lg:mt-24 mb-40">
