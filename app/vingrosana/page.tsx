@@ -103,7 +103,7 @@ const Vingrosana = () => {
                 variant={"ghost"}
                 className="rounded-md border bg-[#f5712c] px-3 text-xs text-white hover:bg-orange-600 hover:text-white"
               >
-                Pierakstīties
+                Pieteikties
               </Button>
             </Link>
           </BlurFade>

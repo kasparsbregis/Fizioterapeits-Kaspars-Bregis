@@ -17,12 +17,16 @@ const invoices = [
 
 export function KonsultacijaPricing() {
   return (
-    <Table>
+    <Table className="text-[16px]">
       <TableHeader>
-        <TableRow>
-          <TableHead className="">Pakalpojums</TableHead>
-          <TableHead>Laiks</TableHead>
-          <TableHead className="text-right">Cena</TableHead>
+        <TableRow className="bg-[#f5712c]">
+          <TableHead className="font-bold text-[#292929]">
+            Pakalpojums
+          </TableHead>
+          <TableHead className="font-bold text-[#292929]">Laiks</TableHead>
+          <TableHead className="text-right font-bold text-[#292929]">
+            Cena
+          </TableHead>
         </TableRow>
       </TableHeader>
       <TableBody>
