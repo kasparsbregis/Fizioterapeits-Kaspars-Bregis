@@ -14,7 +14,7 @@ const Vizitkarte = () => {
           </h1>
           <div className="mt-4 flex flex-col gap-2">
             <p>
-              <span className="text-xl font-bold">2015.-2019.</span> - Bakalaura
+              <span className="text-xl font-bold">2013.-2017.</span> - Bakalaura
               grāds &quot;Fizioterapija&quot; - Latvijas Sporta Pedagoģijas
               Akadēmija (LSPA)
             </p>
@@ -24,7 +24,7 @@ const Vizitkarte = () => {
               fizioterapeits&quot;
             </p>
             <p>
-              <span className="text-xl font-bold">2019.-2021.</span> -
+              <span className="text-xl font-bold">2018.-2020.</span> -
               Specialitāte &quot;Lietišķās kinezioloģijas speciālists&quot; -
               Medicīnas un Izglītības centrs &quot;VOKS&quot;
             </p>
@@ -38,12 +38,12 @@ const Vizitkarte = () => {
           </h1>
           <div className="mt-4 flex flex-col items-start gap-2 sm:items-end">
             <p>
-              <span className="text-xl font-bold">2016.-2019.</span> -
+              <span className="text-xl font-bold">2015.-2019.</span> -
               Fizioterapeits SIA &quot;Siguldas Slimnīca&quot; rehabilitācijas
               nodaļa
             </p>
             <p>
-              <span className="text-xl font-bold">2018.-2018.</span> -
+              <span className="text-xl font-bold">2017.-2017.</span> -
               Fizioterapeits SIA &quot;LE Fizio&quot;
             </p>
             <p>
