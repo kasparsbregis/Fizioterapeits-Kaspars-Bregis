@@ -6,7 +6,7 @@ import BlurFade from "./ui/blur-fade";
 const LocationWithMarker = () => {
   return (
     <section className="flex w-full flex-col items-center pt-24 md:pt-40">
-      <BlurFade inView delay={0.1}>
+      <BlurFade inView delay={0.1} className="px-6">
         <div className="section-heading">
           <h2 className="section-title">Lokācija</h2>
           <p className="section-description mt-5">

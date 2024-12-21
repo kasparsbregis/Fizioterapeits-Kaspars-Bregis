@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
@@ -9,16 +10,27 @@ const Navbar = () => {
     <BlurFade
       delay={0.15}
       inView
-      className="fixed z-50 h-14 w-full items-center border-b border-black/20 bg-[#ceecea]/40 text-black backdrop-blur-lg"
+      className="fixed z-50 h-16 w-full items-center border-b border-black/20 bg-[#ceecea]/40 text-black backdrop-blur-lg"
     >
       <div className="mx-auto flex h-full max-w-[1400px] items-center justify-between px-8">
         <Link href={"/"} className="flex items-center justify-center gap-2">
           {/* <Image src="/logo.png" height={50} width={50} alt="hello" /> */}
-          <span className="font-bold tracking-tighter text-[#f5712c]">
+          {/* <span className="font-bold tracking-tighter text-[#f5712c]">
             KB.LV
-          </span>
+          </span> */}
+          <div className="flex flex-row items-center gap-1">
+            <Image
+              src={"/logo-fiziokaspars.png"}
+              alt="Logo FizioKaspars"
+              height={28}
+              width={28}
+            />
+            <span className="font-bold tracking-tight text-[#292929]">
+              FIZIO<span className="text-[#f5712c]">KASPARS</span>
+            </span>
+          </div>
         </Link>
-        <div className="ml-auto flex items-center gap-2">
+        <div className="my-auto ml-auto flex items-center gap-2">
           {/* <Button variant={"ghost"}>Log in</Button> */}
           <Link href={"/pieteikties"}>
             <Button className="h-8 rounded-md bg-[#292929] px-3 text-xs hover:bg-[#000000] ">
