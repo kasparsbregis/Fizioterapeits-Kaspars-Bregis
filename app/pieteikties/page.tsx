@@ -28,13 +28,16 @@ const Pieteikties = () => {
           delay={0.5}
           className="mt-6 flex max-w-7xl flex-col items-center px-6"
         >
-          <div className="flex max-w-7xl flex-col items-center gap-3">
-            <h1 className="text-center text-[32px] leading-[30px] tracking-tight text-[#010D3E]">
+          <div className="flex max-w-7xl flex-col items-center">
+            <h1 className="text-center text-[24px] leading-[30px] tracking-tight text-[#010D3E]">
               Piesakieties, zvanot pa tālruni{" "}
-              <span className="text-[36px] font-bold leading-relaxed">
-                +371 26 77 90 84
-              </span>
             </h1>
+            <a
+              href="tel:+37126779084"
+              className="text-[30px] font-bold leading-relaxed"
+            >
+              <span className="text-[24px]">+371</span> 26779084
+            </a>
           </div>
           <Image
             src="/kabinets.png"
