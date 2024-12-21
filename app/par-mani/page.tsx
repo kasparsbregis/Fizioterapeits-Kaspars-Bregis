@@ -7,9 +7,9 @@ import Vizitkarte from "@/components/Vizitkarte";
 
 const ParMani = () => {
   return (
-    <div className="flex h-screen w-full flex-col items-center text-black">
+    <div className="flex  w-full flex-col items-center text-black">
       <Navbar />
-      <BlurFade inView delay={0.4} className="mt-24 items-center">
+      <BlurFade inView delay={0.15} className="mt-24 items-center">
         <div className="section-heading max-w-7xl px-6">
           <h2 className="section-title mb-16 tracking-tight md:text-[40px]">
             Par mani

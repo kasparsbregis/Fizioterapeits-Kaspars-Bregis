@@ -91,7 +91,7 @@ const Konsultacija = () => {
             </Link>
           </BlurFade>
           <BlurFade delay={0.43}>
-            <Link href="/">
+            <Link href="/pieteikties">
               <Button
                 variant={"ghost"}
                 className="rounded-md border bg-[#f5712c] px-3 text-xs text-white hover:bg-orange-600 hover:text-white"

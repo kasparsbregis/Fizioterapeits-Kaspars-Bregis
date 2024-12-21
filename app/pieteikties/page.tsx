@@ -1,0 +1,80 @@
+import Image from "next/image";
+import Link from "next/link";
+import React from "react";
+
+import { PilnsCenradis } from "@/components/Cenradis";
+import { DarbaLaiks } from "@/components/DarbaLaiks";
+import Footer from "@/components/Footer";
+import LocationWithMarker from "@/components/Location";
+import Navbar from "@/components/Navbar";
+import BlurFade from "@/components/ui/blur-fade";
+import { Button } from "@/components/ui/button";
+
+const Pieteikties = () => {
+  return (
+    <div className="flex h-screen w-full flex-col items-center text-[#292929]">
+      <Navbar />
+      <div className="w-full max-w-7xl">
+        <BlurFade inView delay={0.4} className="mt-24 items-center">
+          <div className="section-heading max-w-7xl px-6">
+            <h2 className="section-title tracking-tight md:text-[40px]">
+              Pieteikties
+            </h2>
+            {/* <p className="section-description mt-5">Kā tas notiek?</p> */}
+          </div>
+        </BlurFade>
+        <BlurFade
+          inView
+          delay={0.5}
+          className="mt-6 flex max-w-7xl flex-col items-center px-6"
+        >
+          <div className="flex max-w-7xl flex-col items-center gap-3">
+            <h1 className="text-center text-[32px] leading-[30px] tracking-tight text-[#010D3E]">
+              Piesakieties, zvanot pa tālruni{" "}
+              <span className="text-[36px] font-bold leading-relaxed">
+                +371 26 77 90 84
+              </span>
+            </h1>
+          </div>
+          <Image
+            src="/kabinets.png"
+            alt="Fizioterapeita kabinets"
+            width={800}
+            height={60}
+            className="rounded-xl"
+          />
+
+          <div className="mt-16 flex w-full max-w-7xl flex-col items-start gap-16 md:flex-row md:gap-4 ">
+            <div className="flex w-full flex-col items-center gap-3 md:gap-0">
+              <h2 className="section-title text-[24px] tracking-tight">
+                Cenrādis
+              </h2>
+              <PilnsCenradis />
+            </div>
+            <div className="flex w-full flex-col items-center gap-3 md:gap-0">
+              <h2 className="section-title text-[24px] tracking-tight">
+                Darba laiks
+              </h2>
+              <DarbaLaiks />
+            </div>
+          </div>
+          <div className="w-full max-w-7xl">
+            <LocationWithMarker />
+          </div>
+
+          <div className="mt-8 flex max-w-7xl gap-3">
+            <Link href="/">
+              <Button className="rounded-md bg-[#292929] px-3  text-xs hover:bg-black hover:text-white">
+                Atpakaļ
+              </Button>
+            </Link>
+          </div>
+        </BlurFade>
+      </div>
+
+      <Footer />
+    </div>
+  );
+};
+
+export default Pieteikties;

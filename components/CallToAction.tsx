@@ -17,7 +17,7 @@ const CallToAction = () => {
           <h1 className="section-title text-[24px] leading-tight sm:text-[36px] md:px-24">
             Atbrīvojies no sāpēm šodien!
           </h1>
-          <Link href={"/"}>
+          <Link href={"/pieteikties"}>
             <Button className="">Pieteikties</Button>
           </Link>
         </div>

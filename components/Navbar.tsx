@@ -20,7 +20,7 @@ const Navbar = () => {
         </Link>
         <div className="ml-auto flex items-center gap-2">
           {/* <Button variant={"ghost"}>Log in</Button> */}
-          <Link href={"/"}>
+          <Link href={"/pieteikties"}>
             <Button className="h-8 rounded-md bg-[#292929] px-3 text-xs hover:bg-[#000000] ">
               Pieteikties
             </Button>

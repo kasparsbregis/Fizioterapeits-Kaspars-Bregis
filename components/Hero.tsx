@@ -43,7 +43,7 @@ const Hero = () => {
         </BlurFade>
         <div className="flex gap-2 pt-16 sm:gap-5">
           <BlurFade delay={0.2}>
-            <Link href={"/"}>
+            <Link href={"/pieteikties"}>
               <Button className="rounded-md bg-[#f5712c] px-6 py-4 text-base hover:bg-orange-600 ">
                 Pieteikties
               </Button>

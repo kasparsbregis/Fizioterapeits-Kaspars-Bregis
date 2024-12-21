@@ -108,15 +108,17 @@ export const Pricing = () => {
                       {monthlyPrice} €
                     </span>
                   </div>
-                  <button
-                    className={twMerge(
-                      "btn btn-primary w-full mt-[30px] bg-transparent border-[#f5712c] border text-[#f5712c] hover:bg-[#f5712c] hover:text-white",
-                      inverse === true &&
-                        "text-white bg-[#f5712c] hover:bg-orange-600"
-                    )}
-                  >
-                    {buttonText}
-                  </button>
+                  <Link href={"/pieteikties"}>
+                    <button
+                      className={twMerge(
+                        "btn btn-primary w-full mt-[30px] bg-transparent border-[#f5712c] border text-[#f5712c] hover:bg-[#f5712c] hover:text-white",
+                        inverse === true &&
+                          "text-white bg-[#f5712c] hover:bg-orange-600"
+                      )}
+                    >
+                      {buttonText}
+                    </button>
+                  </Link>
                   <ul className="mt-8 flex flex-col gap-5">
                     {features.map((feature, i) => (
                       <li key={i} className="flex items-center gap-4 text-sm">
