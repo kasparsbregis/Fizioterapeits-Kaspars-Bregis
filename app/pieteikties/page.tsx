@@ -40,7 +40,7 @@ const Pieteikties = () => {
             </a>
           </div>
           <Image
-            src="/kabinets.png"
+            src="/kabinets.jpg"
             alt="Fizioterapeita kabinets"
             width={800}
             height={60}
