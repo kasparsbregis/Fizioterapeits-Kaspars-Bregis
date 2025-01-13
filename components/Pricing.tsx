@@ -28,11 +28,11 @@ const pricingTiers = [
   },
   {
     title: "Masāža",
-    monthlyPrice: "20-30",
+    monthlyPrice: "20-40",
     buttonText: "Pieteikties",
     popular: true,
     inverse: true,
-    features: ["30min, 40min vai 50min"],
+    features: ["30min - 60min"],
   },
   {
     title: "Teipošana",

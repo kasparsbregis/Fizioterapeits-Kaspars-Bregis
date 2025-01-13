@@ -37,8 +37,8 @@ const Hero = () => {
         </BlurFade>
         <BlurFade delay={0.2}>
           <span className="flex max-w-[350px] pt-10 text-center text-lg font-medium md:max-w-[650px] lg:text-xl">
-            Pieredze darbā slimnīcā, rehabilitācijas nodaļā (traumatoloģija,
-            neiroloģija), kā arī sportā (futbols)
+            10 gadu pieredze fizioterapijā - darbā slimnīcā, rehabilitācijas nodaļā (traumatoloģija,
+            neiroloģija), kā arī profesionālā sportā (futbols)
           </span>
         </BlurFade>
         <div className="flex gap-2 pt-16 sm:gap-5">

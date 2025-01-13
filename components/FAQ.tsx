@@ -95,7 +95,7 @@ const FAQ = () => {
                   <span className="font-semibold">Piektdiena:</span> 08:00-20:00
                 </p>
                 <p>
-                  <span className="font-semibold">Sestdiena:</span> 10:00-13:00
+                  <span className="font-semibold">Sestdiena:</span> 09:00-13:00
                 </p>
                 <p>
                   <span className="font-semibold">Svētdiena:</span> Brīvs

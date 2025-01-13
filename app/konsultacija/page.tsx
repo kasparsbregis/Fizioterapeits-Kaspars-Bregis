@@ -54,13 +54,13 @@ const Konsultacija = () => {
             izvērtētu, kādā stāvoklī ir Jūsu muskuļi. Ja ir ievērojamas stājas
             izmaiņas (piemēram, viens plecs augstāk par otru, iegurņa rotācija,
             utt.), tad fizioterapeits to sev piefiksē, ka šim cilvēkam ir
-            muskuļu disbalanss.
+            muskuļu disbalanss un atzīmē, kuri muskuļi ir galvenie aizdomās turamie stājas izmaiņām.
           </p>
           <p>
             Kad stāja ir izvērtēta, fizioterapeits var palūgt Jūs apgulties uz
             kušetes (masāžas galda), lai sāktu testēt muskuļus izolētāk.
-            Visbiežāk sāk ar kustību amplitūdu locītavās, bet pēc tam - muskuļu
-            spēks. Visbiežāk tiks tekstēti muskuļi, kas ir apkārt locītavām,
+            Sāksim ar kustību amplitūdas izvērtēšanu locītavās, bet pēc tam - muskuļu
+            spēka izvērtēšanu. Visbiežāk tiks testēti muskuļi, kas ir apkārt locītavām,
             kuras ir tuvāk problēmzonai. Fizioterapeits var veikt arī
             specifiskus fizioterapijas testus konkrētu diagnožu izslēgšanai.
             Piemēram, var veikt &quot;tukšas bundžas&quot; (empty can) testu,
@@ -73,7 +73,7 @@ const Konsultacija = () => {
             3. Fizioterapijas plāna izstrāde
           </h1>
           <p>
-            Brīdī, kad cilvēks ir izjautāts un fizioterapijas veikti,
+            Brīdī, kad cilvēks ir izjautāts un fizioterapijas testi veikti,
             fizioterapeits ar Jums izrunās iespējamos problēmas cēloņus un
             piedāvās savu redzējumu tā ārstēšanai. Visbiežāk tas ir vingrošanas
             kurss vai masāžas kurss, vai vingrošanas+masāžas kurss.

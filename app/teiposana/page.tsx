@@ -52,7 +52,7 @@ const Teiposana = () => {
           <p>
             Savā pieredzē novērots, ka pret tūsku ļoti efektīvi strādā
             teipošana. Svarīga ir teipošanas tehnika, lai uzlabotu limfas
-            atteci, tādā veidā arī novadīt iekaisīgos procesus uz limfmezgliem
+            atteci, tādā veidā arī novada iekaisīgos procesus uz limfmezgliem
             un pēc tam uz izvadkanāliem.
           </p>
         </div>

@@ -47,17 +47,17 @@ const masaza = [
   {
     invoice: "Abu roku masāža",
     totalAmount: "€25.00",
-    paymentMethod: "30-35min",
+    paymentMethod: "25-30min",
   },
   {
     invoice: "Abu kāju masāža",
     totalAmount: "€25.00",
-    paymentMethod: "35-40min",
+    paymentMethod: "30-35min",
   },
   {
     invoice: "Mugura + kājas",
-    totalAmount: "€35.00",
-    paymentMethod: "45-50min",
+    totalAmount: "€40.00",
+    paymentMethod: "55-60min",
   },
 ];
 

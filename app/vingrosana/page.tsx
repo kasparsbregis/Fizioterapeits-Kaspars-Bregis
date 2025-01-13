@@ -43,11 +43,11 @@ const Vingrosana = () => {
           <p>
             Ārstnieciskās vingrošanas pamatā ir muskuļu disbalansa mazināšana
             vai muskuļu spēka atgūšana pēc kādas konkrētas traumas vai
-            operācijas. Sāksim ar to, ka nav veselu cilvēku ar ideālu stāju. Tas
+            operācijas. Sāksim ar to, ka <b>nav veselu cilvēku ar ideālu stāju</b>. Tas
             saistīts ar to, ka jebkuram cilvēkam viena ir dominējošā roka vai
-            kāja viņa ikdienas aktivitātes, nav svarīgi, vai tas ir profesionāls
+            kāja viņa ikdienas aktivitātēs - nav svarīgi, vai tas ir profesionāls
             basketbolists, ofisa darbinieks vai pensionārs, kas izbauda sev
-            sarūpēto atpūtu. Kaut vai tas, kā mēs sēžam, gribās atbalstīt vienu
+            sarūpēto atpūtu. Kaut vai tas, kā mēs sēžam - gribās atbalstīt vienu
             elkoni vairāk kā otru. Kaut vai tas, ka pulksteni nēsājam visbiežāk
             uz kreisās rokas. Kaut vai tas, ka telefonu nēsājam līdzi pārsvarā
             vienā un tai pašā kabatā. Jo vairāk šādu asimetrisku darbību, jo
@@ -66,7 +66,7 @@ const Vingrosana = () => {
             Par tableti runājot... Tablete var mazināt iekaisumu, var mazināt
             tūsku, var mazināt sāpes. Bet tas iekaisums plecā, vai tūska pie
             L4-L5 starpskriemeļu diska, kas kairina nervu saknīti, vai sāpes
-            mugurā ir problēmas sekas. Problēmas cēlonis (tālbraucēja gadījumā)
+            mugurā <b>ir problēmas sekas</b>. Problēmas cēlonis (tālbraucēja gadījumā)
             ir muskuļu disbalanss. Tāpēc vajag vingrot, lai atgūtu vienādu
             muskuļu spēku starp labo un kreiso ķermeņa pusi, atgūtu pareizas
             spēku proporcijas apkārt locītavām. Jo cietās struktūras (kauli,

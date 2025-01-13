@@ -30,7 +30,7 @@ const invoices = [
   },
   {
     invoice: "Sestdiena:",
-    paymentMethod: "10:00 - 14:00",
+    paymentMethod: "09:00 - 13:00",
   },
   {
     invoice: "Svētdiena:",

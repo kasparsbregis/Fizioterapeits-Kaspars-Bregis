@@ -9,7 +9,7 @@ const features = [
     Icon: FileTextIcon,
     name: "Fizioterapeita konsultācija",
     description:
-      "Anamnēzes ievākšana, muskuļu spēka testi, muskuļu garuma testi, fizioterapijas speciālie testi, rehabilitācijas plāna izstrāde",
+      "Anamnēzes ievākšana, locītavu kustību apjoma noteikšana, muskuļu spēka testi, fizioterapijas speciālie testi, rehabilitācijas plāna izstrāde",
     href: "/konsultacija",
     cta: "Uzzināt vairāk",
     className:
@@ -28,7 +28,7 @@ const features = [
   {
     Icon: Share2Icon,
     name: "Ārstnieciskā masāža",
-    description: "Muskuļu tonusu mazinoša, relaksējoša masāža",
+    description: "Masāža, kas uzlabos muskuļu, locītavu un ķermeņa pašsajūtu",
     href: "/masaza",
     cta: "Uzzināt vairāk",
     className:
@@ -38,7 +38,7 @@ const features = [
     Icon: CalendarIcon,
     name: "Teipošana",
     description:
-      "Muskuļu tonusa korekcija, locītavu stabilizācija, tūskas mazināšana",
+      "Palīdzēs muskuļu tonusa regulēšanai, locītavu stabilizācijai un tūskas mazināšanai",
     className:
       "col-span-3 lg:col-span-1 bg-[url('/teiposana.png')] bg-cover bg-center",
     href: "/teiposana",

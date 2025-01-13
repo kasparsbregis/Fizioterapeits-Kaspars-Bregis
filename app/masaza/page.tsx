@@ -42,7 +42,7 @@ const Masaza = () => {
           <p>
             Ārstnieciskā masāža ir viena no senākajām ārstniecības tehnikām. Tā
             var mazināt muskuļu tonusu (spriedzi), uzlabo apasiņošanu muskuļiem
-            un ādai, tas, savukārt, uzlabo vielmaiņas procesu muskuļos un ādā,
+            un ādai, tas, savukārt, uzlabo vielmaiņas procesus muskuļos un ādā,
             uzlabojot muskuļu funkcionalitāti (izturību un elastību) un ādas
             kvalitāti. Ārstnieciskai masāžai piemīt arī pretiekaisuma un
             prettūskas efekts, tas, savukārt, var mazināt sāpes. Tāpat arī
@@ -55,7 +55,7 @@ const Masaza = () => {
             Ko labāk izvēlēties - masāžu vai vingrošanu?
           </h1>
           <p>
-            Visiem taču labāk patīk masāžā kā vingrošana, vai ne? Tas saistīts
+            Visiem taču labāk patīk masāža kā vingrošana, vai ne? Tas saistīts
             ar to, ka cilvēks pēc dabas ir slinks. No tā izriet tas, ka
             organisms izvēlēsies maksimāli energoefektīvāko (process, kas
             pieprasa vismazāko enerģijas patēriņu) ceļu problēmas risināšanai.
