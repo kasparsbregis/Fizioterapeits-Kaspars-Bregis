@@ -66,7 +66,7 @@ export default function RootLayout({
               name: "Breģis Kaspars - fizioterapeita prakse",
               telephone: "+371 26779084",
               url: "https://www.fiziokaspars.lv",
-              image: "https://www.fiziokaspars.lv/assets/og-image.png",
+              image: "https://www.fiziokaspars.lv/assets/og-logo.png",
             }),
           }}
         />
