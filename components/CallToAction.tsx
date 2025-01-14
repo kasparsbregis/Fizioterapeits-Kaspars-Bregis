@@ -23,7 +23,7 @@ const CallToAction = () => {
         </div>
         <div className="flex flex-col justify-end overflow-hidden pt-10">
           <Image
-            src={"/kasparsbregisfizioterapeits5.png"}
+            src={"/kasparsbregisfizioterapeits7.png"}
             alt="Kaspars Bregis"
             width={150}
             height={150}
