@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import React from "react";
 
 import CallToAction from "@/components/CallToAction";
@@ -10,6 +11,16 @@ import { Pricing } from "@/components/Pricing";
 import { BentoServices } from "@/components/ui/BentoServices";
 import DotPattern from "@/components/ui/dot-pattern";
 import { cn } from "@/lib/utils";
+
+export const metadata: Metadata = {
+    title: `Breģis Kaspars - fizioterapeita prakse`,
+    description: "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
+    openGraph: {
+      title: `Breģis Kaspars - fizioterapeita prakse`,
+      description: "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
+      type: "website",
+    },
+}
 
 const Home = () => {
   return (

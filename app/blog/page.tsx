@@ -1,4 +1,4 @@
-import { Metadata } from "next";
+// import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 
@@ -9,10 +9,10 @@ import { MagicCard } from "@/components/ui/magic-card";
 
 import { posts } from "../data/data";
 
-export const metadata: Metadata = {
-  title: "Blogs || Fizioterapeits Kaspars Breģis",
-  description: "Sertificēts fizioterapeits Siguldā",
-};
+// export const metadata: Metadata = {
+//   title: "Blogs || Fizioterapeits Kaspars Breģis",
+//   description: "Sertificēts fizioterapeits Siguldā",
+// };
 
 export default function BlogIndexPage() {
   return (

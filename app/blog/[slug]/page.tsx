@@ -1,5 +1,5 @@
 import { ArrowLeftIcon } from "lucide-react";
-import { Metadata } from "next";
+// import { Metadata } from "next";
 import Image from "next/image";
 import Link from "next/link";
 import { notFound } from "next/navigation";
@@ -12,33 +12,33 @@ import { Button } from "@/components/ui/button";
 import { posts } from "../../data/data";
 
 // Server-side function to generate metadata
-export async function generateMetadata({
-  params,
-}: {
-  params: Promise<{ slug: string }>;
-}): Promise<Metadata> {
-  const slug = (await params).slug; // No need to await params
+// export async function generateMetadata({
+//   params,
+// }: {
+//   params: Promise<{ slug: string }>;
+// }): Promise<Metadata> {
+//   const slug = (await params).slug; // No need to await params
 
-  const post = posts.find((p) => p.slug === slug);
+//   const post = posts.find((p) => p.slug === slug);
 
-  if (!post) {
-    return {
-      title: "Post Not Found",
-      description: "The post you are looking for does not exist.",
-    };
-  }
+//   if (!post) {
+//     return {
+//       title: "Post Not Found",
+//       description: "The post you are looking for does not exist.",
+//     };
+//   }
 
-  return {
-    title: `${post.title} | FizioKaspars`,
-    description: post.excerpt,
-    openGraph: {
-      title: post.title,
-      description: post.excerpt,
-      type: "article",
-      publishedTime: post.date,
-    },
-  };
-}
+//   return {
+//     title: `${post.title} | FizioKaspars`,
+//     description: post.excerpt,
+//     openGraph: {
+//       title: post.title,
+//       description: post.excerpt,
+//       type: "article",
+//       publishedTime: post.date,
+//     },
+//   };
+// }
 
 export default async function BlogPostPage({
   params,
