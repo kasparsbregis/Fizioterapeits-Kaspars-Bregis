@@ -1,7 +1,6 @@
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
-import Head from "next/head";
 
 const DMSans = localFont({
   src: "./fonts/DMSansVF.ttf",
@@ -34,10 +33,10 @@ export const metadata: Metadata = {
     siteName: "Breģis Kaspars - fizioterapeita prakse",
     images: [
       {
-        url: "https://www.fiziokaspars.lv/logo-fiziokaspars.png",
-        width: 1000,
-        height: 1000,
-        alt: "Fizioterapija Siguldā - Breģis Kaspars",
+        url: "https://www.fiziokaspars.lv/assets/og-logo.png",
+        width: 1355,
+        height: 300,
+        alt: "Fizioterapeits Siguldā - Breģis Kaspars",
       },
     ],
     locale: "lv_LV",
@@ -55,22 +54,6 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en" suppressHydrationWarning>
-      <Head>
-        {/* JSON-LD Structured Data */}
-        <script
-          type="application/ld+json"
-          dangerouslySetInnerHTML={{
-            __html: JSON.stringify({
-              "@context": "https://schema.org",
-              "@type": "WebSite",
-              name: "Breģis Kaspars - fizioterapeita prakse",
-              telephone: "+371 26779084",
-              url: "https://www.fiziokaspars.lv",
-              image: "https://www.fiziokaspars.lv/assets/og-logo.png",
-            }),
-          }}
-        />
-      </Head>
       <body className={`${DMSans.className}  bg-[#ceecea] antialiased`}>
         {children}
       </body>
