@@ -13,7 +13,7 @@ import DotPattern from "@/components/ui/dot-pattern";
 import { cn } from "@/lib/utils";
 
 export const metadata: Metadata = {
-    title: `Breģis Kaspars - fizioterapeita prakse`,
+    title: `Sākums`,
     icons: {
       icon: "https://www.fiziokaspars.lv/favicon.ico",
     },

@@ -10,7 +10,7 @@ import { Button } from "@/components/ui/button";
 import { VingrosanaPricing } from "@/components/VingrosanaPricing";
 
 export const metadata: Metadata = {
-  title: `Breģis Kaspars - fizioterapeita prakse - Ārstnieciskā vingrošana`,
+  title: `Ārstnieciskā vingrošana`,
   icons: {
     icon: "https://www.fiziokaspars.lv/favicon.ico",
   },

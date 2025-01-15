@@ -10,7 +10,7 @@ import BlurFade from "@/components/ui/blur-fade";
 import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
-  title: `Breģis Kaspars - fizioterapeita prakse - Ārstnieciskā masāža`,
+  title: `Ārstnieciskā masāža`,
   icons: {
     icon: "https://www.fiziokaspars.lv/favicon.ico",
   },
