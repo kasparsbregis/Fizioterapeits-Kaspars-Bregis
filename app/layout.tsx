@@ -45,9 +45,6 @@ export const metadata: Metadata = {
   },
   alternates: {
     canonical: "https://www.fiziokaspars.lv",
-    languages: {
-      "lv-LV": "https://www.fiziokaspars.lv",
-    },
   }
 };
 
