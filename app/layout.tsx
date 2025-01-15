@@ -14,6 +14,9 @@ export const metadata: Metadata = {
     default: "Breģis Kaspars - fizioterapeita prakse",
     template: `%s | Breģis Kaspars - fizioterapeita prakse`
   },
+  alternates: {
+    canonical: "https://www.fiziokaspars.lv",
+  },
   icons: {
     icon: "https://www.fiziokaspars.lv/favicon.ico",
   },
