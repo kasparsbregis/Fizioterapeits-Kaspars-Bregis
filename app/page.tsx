@@ -20,6 +20,14 @@ export const metadata: Metadata = {
       title: `Breģis Kaspars - fizioterapeita prakse`,
       description: "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
       type: "website",
+      images: [
+        {
+          url: "https://www.fiziokaspars.lv/logo-fiziokaspars.png",
+          width: 1000,
+          height: 1000,
+          alt: "Fizioterapija Siguldā - Breģis Kaspars",
+        },
+      ],
     },
 }
 

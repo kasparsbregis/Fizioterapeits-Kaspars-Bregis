@@ -1,3 +1,4 @@
+import { Metadata } from "next";
 import Link from "next/link";
 import React from "react";
 
@@ -6,6 +7,25 @@ import Footer from "@/components/Footer";
 import Navbar from "@/components/Navbar";
 import BlurFade from "@/components/ui/blur-fade";
 import { Button } from "@/components/ui/button";
+
+export const metadata: Metadata = {
+  title: `Breģis Kaspars - fizioterapeita prakse - Fizioterapeita konsultācija - Cenrādis`,
+  description: "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
+  keywords: ['Fizioterapeits', 'Fizioterapeits Sigulda', 'Masāža', 'Masāža Sigulda', 'Ārstnieciskā vingrošana', 'Ārstnieciskā vingrošana Sigulda', 'Teipošana', 'Teipošana Sigulda'],
+  openGraph: {
+    title: `Breģis Kaspars - fizioterapeita prakse`,
+    description: "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
+    type: "website",
+    images: [
+      {
+        url: "https://www.fiziokaspars.lv/logo-fiziokaspars.png",
+        width: 1000,
+        height: 1000,
+        alt: "Fizioterapija Siguldā - Breģis Kaspars",
+      },
+    ],
+  },
+}
 
 const Cenradis = () => {
   return (
