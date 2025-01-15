@@ -25,10 +25,10 @@ export const metadata: Metadata = {
       type: "website",
       images: [
         {
-          url: "https://www.fiziokaspars.lv/assets/og-logo.png",
-          width: 1355,
-          height: 300,
-          alt: "Fizioterapija Siguldā - Breģis Kaspars",
+          url: "https://www.fiziokaspars.lv/assets/og-logo-fiziokaspars.png",
+          width: 1200,
+          height: 630,
+          alt: "Fizioterapeits Siguldā - Breģis Kaspars",
         },
       ],
     },
