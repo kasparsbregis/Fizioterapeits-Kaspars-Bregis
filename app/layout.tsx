@@ -9,7 +9,11 @@ const DMSans = localFont({
 });
 
 export const metadata: Metadata = {
-  title: "Breģis Kaspars - fizioterapeita prakse",
+  metadataBase: new URL('https://www.fiziokaspars.lv'),
+  title: {
+    default: "Breģis Kaspars - fizioterapeita prakse",
+    template: `%s | Breģis Kaspars - fizioterapeita prakse`
+  },
   icons: {
     icon: "https://www.fiziokaspars.lv/favicon.ico",
   },
@@ -26,7 +30,7 @@ export const metadata: Metadata = {
     "teipošana Sigulda",
   ],
   openGraph: {
-    title: "Breģis Kaspars - fizioterapeita prakse | Sigulda",
+    title: "Breģis Kaspars - fizioterapeita prakse",
     description:
       "Fizioterapeits Siguldā. Piedāvāju ārstniecisko vingrošanu, masāžu un kinezioloģisko teipošanu. Atrodos Siguldā, Pils ielā 13a.",
     url: "https://www.fiziokaspars.lv",
@@ -39,12 +43,8 @@ export const metadata: Metadata = {
         alt: "Fizioterapeits Siguldā - Breģis Kaspars",
       },
     ],
-    locale: "lv_LV",
     type: "website",
   },
-  alternates: {
-    canonical: "https://www.fiziokaspars.lv",
-  }
 };
 
 export default function RootLayout({
