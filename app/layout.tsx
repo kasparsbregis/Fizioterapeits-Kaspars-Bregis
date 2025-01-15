@@ -11,6 +11,9 @@ const DMSans = localFont({
 
 export const metadata: Metadata = {
   title: "Breģis Kaspars - fizioterapeita prakse",
+  icons: {
+    icon: "https://www.fiziokaspars.lv/favicon.ico",
+  },
   description:
     "Fizioterapeits Siguldā. Piedāvāju ārstniecisko vingrošanu, masāžu un kinezioloģisko teipošanu. Atrodos Siguldā, Pils ielā 13a. Zvani +371 26779084.",
   keywords: [

@@ -13,6 +13,9 @@ import { Button } from "@/components/ui/button";
 
 export const metadata: Metadata = {
   title: `Breģis Kaspars - fizioterapeita prakse - pieteikties`,
+  icons: {
+    icon: "https://www.fiziokaspars.lv/favicon.ico",
+  },
   description: "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
   keywords: ['Fizioterapeits', 'Fizioterapeits Sigulda', 'Masāža', 'Masāža Sigulda', 'Ārstnieciskā vingrošana', 'Ārstnieciskā vingrošana Sigulda', 'Teipošana', 'Teipošana Sigulda'],
   openGraph: {
