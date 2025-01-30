@@ -3,32 +3,20 @@ import { NextConfig } from 'next'
 const config: NextConfig = {
   async redirects() {
     return [
-      // Redirect from non-www HTTP to HTTPS www
+      // Redirect from http://fiziokaspars.lv or https://fiziokaspars.lv to https://www.fiziokaspars.lv
       {
         source: '/:path*',
         has: [
           {
             type: 'host',
-            value: 'fiziokaspars.lv',
+            value: 'fiziokaspars.lv',  // Target domain without www
           },
         ],
-        destination: 'https://www.fiziokaspars.lv/:path*',
-        permanent: true,
+        destination: 'https://www.fiziokaspars.lv/:path*',  // Redirect to www with HTTPS
+        permanent: true,  // Use 301 (permanent) redirect
       },
-      // Redirect from non-www HTTPS to www
-      {
-        source: '/:path*',
-        has: [
-          {
-            type: 'host',
-            value: 'fiziokaspars.lv',
-          },
-        ],
-        permanent: true,
-        destination: 'https://www.fiziokaspars.lv/:path*',
-      }
     ]
-  }
+  },
 }
 
 export default config
