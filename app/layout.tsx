@@ -12,8 +12,8 @@ const DMSans = localFont({
 export const metadata: Metadata = {
   metadataBase: new URL('https://www.fiziokaspars.lv'),
   title: {
-    default: "Breģis Kaspars - fizioterapeita prakse Siguldā",
-    template: `%s | Breģis Kaspars - fizioterapeita prakse Siguldā`
+    default: "Fizioterapeits Siguldā - Breģis Kaspars - fizioterapeita prakse",
+    template: `%s | Fizioterapeits Siguldā - Breģis Kaspars - fizioterapeita prakse`
   },
   alternates: {
     canonical: "https://www.fiziokaspars.lv",
@@ -22,7 +22,7 @@ export const metadata: Metadata = {
     icon: "https://www.fiziokaspars.lv/favicon.ico",
   },
   description:
-    "Fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko vingrošanu, masāžu un kinezioloģisko teipošanu. Atrodos Siguldā, Pils ielā 13a. Zvani +371 26779084.",
+    "Fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko vingrošanu, masāžu un kinezioloģisko teipošanu. Atrodos Siguldā, Pils ielā 13a.",
   keywords: [
     "fizioterapeits",
     "fizioterapeits Sigulda",
@@ -34,17 +34,17 @@ export const metadata: Metadata = {
     "teipošana Sigulda",
   ],
   openGraph: {
-    title: "Breģis Kaspars - fizioterapeita prakse",
+    title: "Fizioterapeits Siguldā - Breģis Kaspars - fizioterapeita prakse",
     description:
       "Fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko vingrošanu, masāžu un kinezioloģisko teipošanu. Atrodos Siguldā, Pils ielā 13a.",
     url: "https://www.fiziokaspars.lv",
-    siteName: "Breģis Kaspars - fizioterapeita prakse",
+    siteName: "Fizioterapeits Siguldā - Breģis Kaspars - fizioterapeita prakse",
     images: [
       {
         url: "https://www.fiziokaspars.lv/assets/og-logo-fiziokaspars.png",
         width: 1200,
         height: 630,
-        alt: "Fizioterapeits Siguldā - Breģis Kaspars",
+        alt: "Fizioterapeits Siguldā - Breģis Kaspars - fizioterapeita prakse",
       },
     ],
     type: "website",
