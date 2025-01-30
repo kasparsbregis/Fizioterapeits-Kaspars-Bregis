@@ -3,7 +3,7 @@ import { NextConfig } from 'next'
 const config: NextConfig = {
   async redirects() {
     return [
-      // Redirect from non-www to www
+      // Redirect from non-www HTTP to HTTPS www
       {
         source: '/:path*',
         has: [
@@ -15,17 +15,17 @@ const config: NextConfig = {
         destination: 'https://www.fiziokaspars.lv/:path*',
         permanent: true,
       },
-      // Redirect from http://www to https://www
+      // Redirect from non-www HTTPS to www
       {
         source: '/:path*',
         has: [
           {
             type: 'host',
-            value: 'www.fiziokaspars.lv',
+            value: 'fiziokaspars.lv',
           },
         ],
-        destination: 'https://www.fiziokaspars.lv/:path*',
         permanent: true,
+        destination: 'https://www.fiziokaspars.lv/:path*',
       }
     ]
   }
