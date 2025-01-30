@@ -1,15 +1,8 @@
 {
     "redirects": [
-      {
-        "source": "http://fiziokaspars.lv",
-        "destination": "https://www.fiziokaspars.lv",
-        "permanent": true
-      },
-      {
-        "source": "https://fiziokaspars.lv",
-        "destination": "https://www.fiziokaspars.lv",
-        "permanent": true
-      }
+      { "source": "http://fiziokaspars.lv", "destination": "https://www.fiziokaspars.lv", "statusCode": 301 },
+      { "source": "http://www.fiziokaspars.lv", "destination": "https://www.fiziokaspars.lv", "statusCode": 301 },
+      { "source": "https://fiziokaspars.lv", "destination": "https://www.fiziokaspars.lv", "statusCode": 301 }
     ]
   }
   
