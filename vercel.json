@@ -1,17 +1,7 @@
 {
     "redirects": [
       {
-        "source": "http://fiziokaspars.lv",
-        "destination": "https://www.fiziokaspars.lv",
-        "permanent": true
-      },
-      {
-        "source": "http://www.fiziokaspars.lv",
-        "destination": "https://www.fiziokaspars.lv",
-        "permanent": true
-      },
-      {
-        "source": "https://fiziokaspars.lv",
+        "source": "/",
         "destination": "https://www.fiziokaspars.lv",
         "permanent": true
       }
