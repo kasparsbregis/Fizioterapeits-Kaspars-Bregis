@@ -1,0 +1,16 @@
+{
+    "redirects": [
+      {
+        "source": "/",
+        "has": [
+          {
+            "type": "host",
+            "value": "fiziokaspars.lv"
+          }
+        ],
+        "destination": "https://www.fiziokaspars.lv",
+        "permanent": true
+      }
+    ]
+  }
+  
