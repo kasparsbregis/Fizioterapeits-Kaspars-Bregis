@@ -1,15 +1,26 @@
 {
     "redirects": [
       {
-        "source": "https://fiziokaspars.lv",
+        "source": "/",
+        "has": [
+          {
+            "type": "host",
+            "value": "fiziokaspars.lv"
+          }
+        ],
         "destination": "https://www.fiziokaspars.lv",
         "permanent": true
       },
       {
-        "source": "http://fiziokaspars.lv",
+        "source": "/",
+        "has": [
+          {
+            "type": "host",
+            "value": "www.fiziokaspars.lv"
+          }
+        ],
         "destination": "https://www.fiziokaspars.lv",
         "permanent": true
       }
     ]
   }
-  
