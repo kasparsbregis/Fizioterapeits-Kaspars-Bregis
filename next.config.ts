@@ -5,14 +5,14 @@ const config: NextConfig = {
     return [
       // Redirect from non-www HTTP to HTTPS www
       {
-        source: 'http://fiziokaspars.lv',
-        destination: 'https://www.fiziokaspars.lv',
+        source: 'http://fiziokaspars.lv/:path*', // Add :path* to capture the whole path
+        destination: 'https://www.fiziokaspars.lv/:path*',
         permanent: true,
       },
       // Redirect from non-www HTTPS to www
       {
-        source: 'https://fiziokaspars.lv',
-        destination: 'https://www.fiziokaspars.lv',
+        source: 'https://fiziokaspars.lv/:path*',
+        destination: 'https://www.fiziokaspars.lv/:path*',
         permanent: true,
       }
     ]
