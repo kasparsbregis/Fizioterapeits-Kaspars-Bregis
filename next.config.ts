@@ -1,12 +1,34 @@
-import type { NextConfig } from "next";
+import { NextConfig } from 'next'
 
-const nextConfig: NextConfig = {
-  /* config options here */
-  // output: "export",
-  // trailingSlash: true,
-  // images: {
-  //   unoptimized: true,
-  // },
-};
+const config: NextConfig = {
+  async redirects() {
+    return [
+      // Redirect from non-www to www
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'fiziokaspars.lv',
+          },
+        ],
+        destination: 'https://www.fiziokaspars.lv/:path*',
+        permanent: true,
+      },
+      // Redirect from http://www to https://www
+      {
+        source: '/:path*',
+        has: [
+          {
+            type: 'host',
+            value: 'www.fiziokaspars.lv',
+          },
+        ],
+        destination: 'https://www.fiziokaspars.lv/:path*',
+        permanent: true,
+      }
+    ]
+  }
+}
 
-export default nextConfig;
+export default config
