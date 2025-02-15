@@ -1,7 +1,9 @@
+import { Analytics } from '@vercel/analytics/next';
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Script from "next/script";
+
 
 const DMSans = localFont({
   src: "./fonts/DMSansVF.ttf",
@@ -87,6 +89,7 @@ export default function RootLayout({
         </noscript>
         {/* End Google Tag Manager (noscript) */}
         {children}
+        <Analytics />
       </body>
     </html>
   );
