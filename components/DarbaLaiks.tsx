@@ -10,27 +10,27 @@ import {
 const invoices = [
   {
     invoice: "Pirmdiena:",
-    paymentMethod: "08:00 - 20:00",
+    paymentMethod: "10:00 - 20:00",
   },
   {
     invoice: "Otrdiena:",
-    paymentMethod: "08:00 - 20:00",
+    paymentMethod: "08:00 - 18:00",
   },
   {
     invoice: "Trešdiena:",
-    paymentMethod: "08:00 - 20:00",
+    paymentMethod: "10:00 - 20:00",
   },
   {
     invoice: "Ceturtdiena:",
-    paymentMethod: "08:00 - 20:00",
+    paymentMethod: "10:00 - 20:00",
   },
   {
     invoice: "Piektdiena:",
-    paymentMethod: "08:00 - 20:00",
+    paymentMethod: "08:00 - 18:00",
   },
   {
     invoice: "Sestdiena:",
-    paymentMethod: "09:00 - 13:00",
+    paymentMethod: "Brīvs",
   },
   {
     invoice: "Svētdiena:",
