@@ -1,6 +1,6 @@
 import React from "react";
 
-import GoogleMapComponent from "./Map";
+import Map from "./Map";
 import BlurFade from "./ui/blur-fade";
 
 const LocationWithMarker = () => {
@@ -16,7 +16,7 @@ const LocationWithMarker = () => {
       </BlurFade>
       <div className="mt-10 w-full max-w-7xl px-6">
         <BlurFade inView delay={0.15} className="overflow-hidden rounded-lg">
-          <GoogleMapComponent />
+          <Map />
         </BlurFade>
       </div>
     </section>
