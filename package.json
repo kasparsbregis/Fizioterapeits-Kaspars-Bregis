@@ -4,7 +4,6 @@
   "private": true,
   "scripts": {
     "dev": "next dev --turbopack",
-    "install": "npm install --legacy-peer-deps",
     "build": "next build",
     "start": "next start",
     "lint": "next lint",
@@ -32,7 +31,7 @@
     "prettier": "^3.4.2",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
-    "react-leaflet": "^5.0.0",
+    "react-leaflet": "^4.2.1",
     "sharp": "^0.33.5",
     "tailwind-merge": "^2.5.5",
     "tailwindcss-animate": "^1.0.7"
