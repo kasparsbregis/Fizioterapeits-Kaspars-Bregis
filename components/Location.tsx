@@ -1,7 +1,7 @@
 import React from "react";
 
 import Map from "./Map";
-import LightLightBlurFade from "./ui/light-blur-fade";
+import LightBlurFade from "./ui/light-blur-fade";
 
 const LocationWithMarker = () => {
   return (
