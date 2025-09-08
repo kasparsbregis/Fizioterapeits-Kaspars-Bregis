@@ -1,0 +1,48 @@
+/* Performance optimizations */
+* {
+  box-sizing: border-box;
+}
+
+/* Prevent layout shifts */
+img {
+  max-width: 100%;
+  height: auto;
+}
+
+/* Optimize font loading */
+@font-face {
+  font-family: "DM Sans";
+  src: url("./fonts/DMSansVF.ttf") format("truetype");
+  font-display: swap;
+  font-weight: 100 900;
+}
+
+/* Reduce paint complexity */
+.gpu-accelerated {
+  transform: translateZ(0);
+  will-change: transform;
+}
+
+/* Optimize animations */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+/* Critical above-the-fold styles */
+.hero-section {
+  contain: layout style paint;
+}
+
+/* Optimize scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Reduce repaints */
+.static-content {
+  contain: layout;
+}

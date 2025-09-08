@@ -2,6 +2,7 @@ import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
+import "./performance.css";
 import Script from "next/script";
 
 const DMSans = localFont({
@@ -67,10 +68,24 @@ export default function RootLayout({
         <link rel="preconnect" href="https://tile.openstreetmap.org" />
         <link rel="dns-prefetch" href="https://tile.openstreetmap.org" />
 
-        {/* Google Tag Manager */}
+        {/* Preload critical resources */}
+        <link
+          rel="preload"
+          href="/fonts/DMSansVF.ttf"
+          as="font"
+          type="font/ttf"
+          crossOrigin="anonymous"
+        />
+        <link
+          rel="preload"
+          href="/kasparsbregisfizioterapeits7.png"
+          as="image"
+        />
+
+        {/* Google Tag Manager - Deferred */}
         <Script
           id="google-tag-manager"
-          strategy="afterInteractive"
+          strategy="lazyOnload"
           dangerouslySetInnerHTML={{
             __html: `
               (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':

@@ -55,6 +55,7 @@ const Map = () => {
               width={25}
               height={25}
               priority={false}
+              quality={90}
             />
             <p className="font-bold">Breģis Kaspars - fizioterapeita prakse</p>
           </div>

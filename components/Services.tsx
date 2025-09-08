@@ -26,6 +26,9 @@ const features = [
         width={200}
         height={200}
         className="absolute -right-20 -top-20 opacity-60"
+        loading="lazy"
+        quality={75}
+        sizes="200px"
       />
     ),
     className:
@@ -44,6 +47,9 @@ const features = [
         width={200}
         height={200}
         className="absolute -right-20 -top-20 opacity-60"
+        loading="lazy"
+        quality={75}
+        sizes="200px"
       />
     ),
     className:
@@ -62,6 +68,9 @@ const features = [
         width={200}
         height={200}
         className="absolute -right-20 -top-20 opacity-60"
+        loading="lazy"
+        quality={75}
+        sizes="200px"
       />
     ),
     className:
@@ -80,6 +89,9 @@ const features = [
         width={200}
         height={200}
         className="absolute -right-20 -top-20 opacity-60"
+        loading="lazy"
+        quality={75}
+        sizes="200px"
       />
     ),
     className:
@@ -100,6 +112,9 @@ const features = [
         width={200}
         height={200}
         className="absolute -right-20 -top-20 opacity-60"
+        loading="lazy"
+        quality={75}
+        sizes="200px"
       />
     ),
     className:
