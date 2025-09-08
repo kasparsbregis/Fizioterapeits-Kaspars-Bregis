@@ -5,10 +5,11 @@ import {
   DumbbellIcon,
   Scissors,
 } from "lucide-react";
+import Image from "next/image";
 import React from "react";
 
 import { BentoGrid, BentoCard } from "./ui/bento-grid";
-import BlurFade from "./ui/blur-fade";
+import LightBlurFade from "./ui/light-blur-fade";
 
 const features = [
   {
@@ -18,7 +19,15 @@ const features = [
       "Anamnēzes ievākšana, fizioterapijas testu veikšana, plāna izstrāde un pirmās darbības sāpju mazināšanai jau pirmajā tikšanās reizē!",
     href: "/",
     cta: "Pierakstīties",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: (
+      <Image
+        src="/hero-dark.png"
+        alt=""
+        width={200}
+        height={200}
+        className="absolute -right-20 -top-20 opacity-60"
+      />
+    ),
     className:
       "lg:row-start-1 lg:row-end-4 lg:col-start-2 lg:col-end-3 bg-[url('/hero-dark.png')] bg-cover",
   },
@@ -28,7 +37,15 @@ const features = [
     description: "Mīksto audu tehnikas, mobilizācijas, manipulācijas",
     href: "/",
     cta: "Pierakstīties",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: (
+      <Image
+        src="/hero-dark.png"
+        alt=""
+        width={200}
+        height={200}
+        className="absolute -right-20 -top-20 opacity-60"
+      />
+    ),
     className:
       "lg:col-start-1 lg:col-end-2 lg:row-start-1 lg:row-end-3 bg-[url('/hero-dark.png')] bg-cover",
   },
@@ -38,7 +55,15 @@ const features = [
     description: "Zils, melns un ādas krāsas",
     href: "/",
     cta: "Pierakstīties",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: (
+      <Image
+        src="/hero-dark.png"
+        alt=""
+        width={200}
+        height={200}
+        className="absolute -right-20 -top-20 opacity-60"
+      />
+    ),
     className:
       "lg:col-start-1 lg:col-end-2 lg:row-start-3 lg:row-end-4 bg-[url('/hero-dark.png')] bg-cover",
   },
@@ -48,7 +73,15 @@ const features = [
     description: "Jums būs zilumi",
     href: "/",
     cta: "Pierakstīties",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: (
+      <Image
+        src="/hero-dark.png"
+        alt=""
+        width={200}
+        height={200}
+        className="absolute -right-20 -top-20 opacity-60"
+      />
+    ),
     className:
       "lg:col-start-3 lg:col-end-3 lg:row-start-1 lg:row-end-2 bg-[url('/hero-dark.png')] bg-cover",
     style: "",
@@ -60,7 +93,15 @@ const features = [
       "Mājās neviens nevingro. Jums gribās vingrot kaut kur citur. Ir opcija to darīt pie fizioterapeita, pie tam, par to arī jāmaksā!",
     href: "/",
     cta: "Pierakstīties",
-    background: <img className="absolute -right-20 -top-20 opacity-60" />,
+    background: (
+      <Image
+        src="/hero-dark.png"
+        alt=""
+        width={200}
+        height={200}
+        className="absolute -right-20 -top-20 opacity-60"
+      />
+    ),
     className:
       "lg:col-start-3 lg:col-end-3 lg:row-start-2 lg:row-end-4 bg-[url('/hero-dark.png')] bg-cover",
   },
@@ -68,7 +109,7 @@ const features = [
 
 const Services = async () => {
   return (
-    <BlurFade
+    <LightBlurFade
       inView
       delay={0.35}
       className="mt-24 flex w-full flex-col items-center pb-40 tracking-wider"
@@ -81,7 +122,7 @@ const Services = async () => {
           ))}
         </BentoGrid>
       </div>
-    </BlurFade>
+    </LightBlurFade>
   );
 };
 

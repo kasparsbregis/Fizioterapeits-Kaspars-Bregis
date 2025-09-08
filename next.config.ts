@@ -9,7 +9,7 @@ const config: NextConfig = {
     minimumCacheTTL: 60,
   },
   experimental: {
-    optimizeCss: true,
+    optimizeCss: false,
   },
   compiler: {
     removeConsole: process.env.NODE_ENV === "production",

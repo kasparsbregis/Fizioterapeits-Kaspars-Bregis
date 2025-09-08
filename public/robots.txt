@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://www.fiziokaspars.lv
+
+# Sitemaps
+Sitemap: https://www.fiziokaspars.lv/sitemap.xml
