@@ -26,6 +26,9 @@ export const metadata: Metadata = {
     "Teipošana",
     "Teipošana Sigulda",
   ],
+  alternates: {
+    canonical: "https://www.fiziokaspars.lv/masaza",
+  },
   openGraph: {
     title: `Breģis Kaspars - fizioterapeita prakse`,
     description:

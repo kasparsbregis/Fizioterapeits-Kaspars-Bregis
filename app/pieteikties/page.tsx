@@ -16,11 +16,25 @@ export const metadata: Metadata = {
   icons: {
     icon: "https://www.fiziokaspars.lv/favicon.ico",
   },
-  description: "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
-  keywords: ['Fizioterapeits', 'Fizioterapeits Sigulda', 'Masāža', 'Masāža Sigulda', 'Ārstnieciskā vingrošana', 'Ārstnieciskā vingrošana Sigulda', 'Teipošana', 'Teipošana Sigulda'],
+  description:
+    "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
+  keywords: [
+    "Fizioterapeits",
+    "Fizioterapeits Sigulda",
+    "Masāža",
+    "Masāža Sigulda",
+    "Ārstnieciskā vingrošana",
+    "Ārstnieciskā vingrošana Sigulda",
+    "Teipošana",
+    "Teipošana Sigulda",
+  ],
+  alternates: {
+    canonical: "https://www.fiziokaspars.lv/pieteikties",
+  },
   openGraph: {
     title: `Breģis Kaspars - fizioterapeita prakse`,
-    description: "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
+    description:
+      "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
     type: "website",
     images: [
       {
@@ -31,7 +45,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-}
+};
 
 const Pieteikties = () => {
   return (
