@@ -6,8 +6,8 @@ import { twMerge } from "tailwind-merge";
 
 import { cn } from "@/lib/utils";
 
-import BlurFade from "./ui/blur-fade";
 import { Button } from "./ui/button";
+import LightBlurFade from "./ui/light-blur-fade";
 
 const pricingTiers = [
   {
@@ -48,15 +48,15 @@ export const Pricing = () => {
   return (
     <section className="flex w-full flex-col items-center pt-24 md:pt-40">
       <div className="container max-w-7xl px-6">
-        <BlurFade inView delay={0.1}>
+        <LightBlurFade inView delay={0.1}>
           <div className="section-heading">
             <h2 className="section-title">Cenrādis</h2>
             <p className="section-description mt-5">
               Aktuālās cenas no 01.01.2025.
             </p>
           </div>
-        </BlurFade>
-        <BlurFade inView delay={0.15} className="">
+        </LightBlurFade>
+        <LightBlurFade inView delay={0.15} className="">
           <div className="mt-10 flex flex-col items-center gap-6 lg:flex-row lg:items-end lg:justify-center">
             {pricingTiers.map(
               (
@@ -131,8 +131,8 @@ export const Pricing = () => {
               )
             )}
           </div>
-        </BlurFade>
-        <BlurFade
+        </LightBlurFade>
+        <LightBlurFade
           inView
           delay={0.2}
           className="mt-20 flex w-full flex-col items-center"
@@ -142,7 +142,7 @@ export const Pricing = () => {
               Aplūkot pilnu cenrādi
             </Button>
           </Link>
-        </BlurFade>
+        </LightBlurFade>
       </div>
     </section>
   );

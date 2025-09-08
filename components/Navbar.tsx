@@ -2,12 +2,12 @@ import Image from "next/image";
 import Link from "next/link";
 import React from "react";
 
-import BlurFade from "./ui/blur-fade";
 import { Button } from "./ui/button";
+import LightBlurFade from "./ui/light-blur-fade";
 
 const Navbar = () => {
   return (
-    <BlurFade
+    <LightBlurFade
       delay={0.15}
       inView
       className="fixed z-50 h-16 w-full items-center border-b border-black/20 bg-[#ceecea]/40 text-black backdrop-blur-lg"
@@ -24,6 +24,9 @@ const Navbar = () => {
               alt="Logo FizioKaspars"
               height={28}
               width={28}
+              priority
+              placeholder="blur"
+              blurDataURL="data:image/jpeg;base64,/9j/4AAQSkZJRgABAQAAAQABAAD/2wBDAAYEBQYFBAYGBQYHBwYIChAKCgkJChQODwwQFxQYGBcUFhYaHSUfGhsjHBYWICwgIyYnKSopGR8tMC0oMCUoKSj/2wBDAQcHBwoIChMKChMoGhYaKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCgoKCj/wAARCAABAAEDASIAAhEBAxEB/8QAFQABAQAAAAAAAAAAAAAAAAAAAAv/xAAUEAEAAAAAAAAAAAAAAAAAAAAA/8QAFQEBAQAAAAAAAAAAAAAAAAAAAAX/xAAUEQEAAAAAAAAAAAAAAAAAAAAA/9oADAMBAAIRAxEAPwCdABmX/9k="
             />
             <span className="font-bold tracking-tight text-[#292929]">
               FIZIO<span className="text-[#f5712c]">KASPARS</span>
@@ -33,7 +36,7 @@ const Navbar = () => {
         <div className="my-auto ml-auto flex items-center gap-2">
           {/* <Button variant={"ghost"}>Log in</Button> */}
           <Link href={"/pieteikties"}>
-            <Button className="h-8 rounded-md bg-[#292929] px-3 text-xs hover:bg-[#000000] ">
+            <Button className="h-8 rounded-md bg-[#292929] px-3 text-xs hover:bg-[#000000]">
               Pieteikties
             </Button>
           </Link>
@@ -48,7 +51,7 @@ const Navbar = () => {
           </Link> */}
         </div>
       </div>
-    </BlurFade>
+    </LightBlurFade>
   );
 };
 

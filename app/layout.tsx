@@ -1,21 +1,22 @@
-import { Analytics } from '@vercel/analytics/next';
+import { Analytics } from "@vercel/analytics/next";
 import type { Metadata } from "next";
 import localFont from "next/font/local";
 import "./globals.css";
 import Script from "next/script";
 
-
 const DMSans = localFont({
   src: "./fonts/DMSansVF.ttf",
   variable: "--font-dm-sans",
   weight: "100 200 300 400 500 600 700 800 900",
+  display: "swap",
+  preload: true,
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL('https://www.fiziokaspars.lv'),
+  metadataBase: new URL("https://www.fiziokaspars.lv"),
   title: {
     default: "Fizioterapeits Siguldā - Breģis Kaspars - fizioterapeita prakse",
-    template: `%s | Fizioterapeits Siguldā - Breģis Kaspars - fizioterapeita prakse`
+    template: `%s | Fizioterapeits Siguldā - Breģis Kaspars - fizioterapeita prakse`,
   },
   alternates: {
     canonical: "https://www.fiziokaspars.lv",
@@ -61,6 +62,11 @@ export default function RootLayout({
   return (
     <html lang="en" suppressHydrationWarning>
       <head>
+        {/* Preconnect to external domains */}
+        <link rel="preconnect" href="https://www.googletagmanager.com" />
+        <link rel="preconnect" href="https://tile.openstreetmap.org" />
+        <link rel="dns-prefetch" href="https://tile.openstreetmap.org" />
+
         {/* Google Tag Manager */}
         <Script
           id="google-tag-manager"

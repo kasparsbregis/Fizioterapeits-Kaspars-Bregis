@@ -2,7 +2,7 @@ import { CalendarIcon, FileTextIcon } from "@radix-ui/react-icons";
 import { BellIcon, Calendar, Icon, Share2Icon } from "lucide-react";
 
 import { BentoGrid, BentoCard } from "./bento-grid";
-import BlurFade from "./blur-fade";
+import LightBlurFade from "./light-blur-fade";
 
 const features = [
   {
@@ -48,7 +48,7 @@ const features = [
 
 export function BentoServices() {
   return (
-    <BlurFade
+    <LightBlurFade
       inView
       delay={0.1}
       className="w-full flex flex-col items-center tracking-wider mt-24 md:mt-40"
@@ -62,6 +62,6 @@ export function BentoServices() {
           <BentoCard key={idx} {...feature} />
         ))}
       </BentoGrid>
-    </BlurFade>
+    </LightBlurFade>
   );
 }

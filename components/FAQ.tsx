@@ -7,15 +7,15 @@ import {
 import { ArrowDownIcon } from "lucide-react";
 import React from "react";
 
-import BlurFade from "./ui/blur-fade";
+import LightBlurFade from "./ui/light-blur-fade";
 
 const FAQ = () => {
   return (
     <div className="w-full max-w-7xl px-6 pt-24 md:pt-40">
-      <BlurFade inView delay={0.1}>
+      <LightBlurFade inView delay={0.1}>
         <h2 className="section-title mb-10">Biežāk uzdotie jautājumi</h2>
-      </BlurFade>
-      <BlurFade inView delay={0.15}>
+      </LightBlurFade>
+      <LightBlurFade inView delay={0.15}>
         <Accordion
           type="single"
           collapsible
@@ -115,7 +115,7 @@ const FAQ = () => {
             <AccordionContent>Apmaksa tikai skaidrā naudā.</AccordionContent>
           </AccordionItem>
         </Accordion>
-      </BlurFade>
+      </LightBlurFade>
     </div>
   );
 };
