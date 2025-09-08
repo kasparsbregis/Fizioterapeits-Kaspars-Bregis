@@ -14,11 +14,22 @@ export const metadata: Metadata = {
   icons: {
     icon: "https://www.fiziokaspars.lv/favicon.ico",
   },
-  description: "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
-  keywords: ['Fizioterapeits', 'Fizioterapeits Sigulda', 'Masāža', 'Masāža Sigulda', 'Ārstnieciskā vingrošana', 'Ārstnieciskā vingrošana Sigulda', 'Teipošana', 'Teipošana Sigulda'],
+  description:
+    "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
+  keywords: [
+    "Fizioterapeits",
+    "Fizioterapeits Sigulda",
+    "Masāža",
+    "Masāža Sigulda",
+    "Ārstnieciskā vingrošana",
+    "Ārstnieciskā vingrošana Sigulda",
+    "Teipošana",
+    "Teipošana Sigulda",
+  ],
   openGraph: {
     title: `Breģis Kaspars - fizioterapeita prakse`,
-    description: "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
+    description:
+      "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
     type: "website",
     images: [
       {
@@ -29,7 +40,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-}
+};
 
 const Teiposana = () => {
   return (
@@ -49,7 +60,7 @@ const Teiposana = () => {
         className="mt-6 flex max-w-7xl flex-col items-center px-6"
       >
         <Image
-          src="/teiposana.png"
+          src="/teiposana.jpg"
           alt="Kinezioloģiskā teipošana"
           width={800}
           height={60}
@@ -75,8 +86,8 @@ const Teiposana = () => {
           <p>
             Savā pieredzē novērots, ka pret tūsku ļoti efektīvi strādā
             teipošana. Svarīga ir teipošanas tehnika, lai uzlabotu limfas
-            atteci, tādā veidā arī novada iekaisīgos procesus uz limfmezgliem
-            un pēc tam uz izvadkanāliem.
+            atteci, tādā veidā arī novada iekaisīgos procesus uz limfmezgliem un
+            pēc tam uz izvadkanāliem.
           </p>
         </div>
         <div className="mt-8 flex max-w-3xl flex-col gap-3">
@@ -100,7 +111,7 @@ const Teiposana = () => {
         <div className="mt-8 flex max-w-3xl gap-3">
           <BlurFade delay={0.43}>
             <Link href="/">
-              <Button className="rounded-md bg-[#292929] px-3  text-xs hover:bg-black hover:text-white">
+              <Button className="rounded-md bg-[#292929] px-3 text-xs hover:bg-black hover:text-white">
                 Atpakaļ
               </Button>
             </Link>

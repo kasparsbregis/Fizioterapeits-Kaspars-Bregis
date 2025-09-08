@@ -14,11 +14,22 @@ export const metadata: Metadata = {
   icons: {
     icon: "https://www.fiziokaspars.lv/favicon.ico",
   },
-  description: "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
-  keywords: ['Fizioterapeits', 'Fizioterapeits Sigulda', 'Masāža', 'Masāža Sigulda', 'Ārstnieciskā vingrošana', 'Ārstnieciskā vingrošana Sigulda', 'Teipošana', 'Teipošana Sigulda'],
+  description:
+    "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
+  keywords: [
+    "Fizioterapeits",
+    "Fizioterapeits Sigulda",
+    "Masāža",
+    "Masāža Sigulda",
+    "Ārstnieciskā vingrošana",
+    "Ārstnieciskā vingrošana Sigulda",
+    "Teipošana",
+    "Teipošana Sigulda",
+  ],
   openGraph: {
     title: `Breģis Kaspars - fizioterapeita prakse`,
-    description: "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
+    description:
+      "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
     type: "website",
     images: [
       {
@@ -29,7 +40,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-}
+};
 
 const Konsultacija = () => {
   return (
@@ -49,7 +60,7 @@ const Konsultacija = () => {
         className="mt-6 flex max-w-7xl flex-col items-center px-6"
       >
         <Image
-          src="/konsultacija.png"
+          src="/konsultacija.jpg"
           alt="Fizioterapeita konsultācija"
           width={800}
           height={60}
@@ -77,14 +88,15 @@ const Konsultacija = () => {
             izvērtētu, kādā stāvoklī ir Jūsu muskuļi. Ja ir ievērojamas stājas
             izmaiņas (piemēram, viens plecs augstāk par otru, iegurņa rotācija,
             utt.), tad fizioterapeits to sev piefiksē, ka šim cilvēkam ir
-            muskuļu disbalanss un atzīmē, kuri muskuļi ir galvenie aizdomās turamie stājas izmaiņām.
+            muskuļu disbalanss un atzīmē, kuri muskuļi ir galvenie aizdomās
+            turamie stājas izmaiņām.
           </p>
           <p>
             Kad stāja ir izvērtēta, fizioterapeits var palūgt Jūs apgulties uz
-            kušetes (masāžas galda), lai sāktu testēt muskuļus izolētāk.
-            Sāksim ar kustību amplitūdas izvērtēšanu locītavās, bet pēc tam - muskuļu
-            spēka izvērtēšanu. Visbiežāk tiks testēti muskuļi, kas ir apkārt locītavām,
-            kuras ir tuvāk problēmzonai. Fizioterapeits var veikt arī
+            kušetes (masāžas galda), lai sāktu testēt muskuļus izolētāk. Sāksim
+            ar kustību amplitūdas izvērtēšanu locītavās, bet pēc tam - muskuļu
+            spēka izvērtēšanu. Visbiežāk tiks testēti muskuļi, kas ir apkārt
+            locītavām, kuras ir tuvāk problēmzonai. Fizioterapeits var veikt arī
             specifiskus fizioterapijas testus konkrētu diagnožu izslēgšanai.
             Piemēram, var veikt &quot;tukšas bundžas&quot; (empty can) testu,
             lai notestētu, vai pie pleca problēmas ir aktuāls muskuļa
@@ -108,7 +120,7 @@ const Konsultacija = () => {
         <div className="mt-8 flex max-w-3xl gap-3">
           <BlurFade delay={0.43}>
             <Link href="/">
-              <Button className="rounded-md bg-[#292929] px-3  text-xs hover:bg-black hover:text-white">
+              <Button className="rounded-md bg-[#292929] px-3 text-xs hover:bg-black hover:text-white">
                 Atpakaļ
               </Button>
             </Link>

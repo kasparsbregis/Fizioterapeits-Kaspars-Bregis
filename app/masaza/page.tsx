@@ -14,11 +14,22 @@ export const metadata: Metadata = {
   icons: {
     icon: "https://www.fiziokaspars.lv/favicon.ico",
   },
-  description: "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
-  keywords: ['Fizioterapeits', 'Fizioterapeits Sigulda', 'Masāža', 'Masāža Sigulda', 'Ārstnieciskā vingrošana', 'Ārstnieciskā vingrošana Sigulda', 'Teipošana', 'Teipošana Sigulda'],
+  description:
+    "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
+  keywords: [
+    "Fizioterapeits",
+    "Fizioterapeits Sigulda",
+    "Masāža",
+    "Masāža Sigulda",
+    "Ārstnieciskā vingrošana",
+    "Ārstnieciskā vingrošana Sigulda",
+    "Teipošana",
+    "Teipošana Sigulda",
+  ],
   openGraph: {
     title: `Breģis Kaspars - fizioterapeita prakse`,
-    description: "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
+    description:
+      "Sertificēts fizioterapeits Siguldā. Piedāvāju fizioterapeita konsultāciju, ārstniecisko masāžu, ārstniecisko vingrošanu un kinezioloģisko teipošanu",
     type: "website",
     images: [
       {
@@ -29,7 +40,7 @@ export const metadata: Metadata = {
       },
     ],
   },
-}
+};
 
 const Masaza = () => {
   return (
@@ -49,7 +60,7 @@ const Masaza = () => {
         className="mt-6 flex max-w-7xl flex-col items-center px-6"
       >
         <Image
-          src="/masaza.png"
+          src="/masaza.jpg"
           alt="Ārstnieciskā masāža"
           width={800}
           height={60}
@@ -91,7 +102,7 @@ const Masaza = () => {
           </p>
         </div>
         <Image
-          src="/bankas.png"
+          src="/bankas.jpg"
           alt="Ārstnieciskā masāža"
           width={800}
           height={60}
@@ -129,7 +140,7 @@ const Masaza = () => {
         <div className="mt-8 flex max-w-3xl gap-3">
           <BlurFade delay={0.43}>
             <Link href="/">
-              <Button className="rounded-md bg-[#292929] px-3  text-xs hover:bg-black hover:text-white">
+              <Button className="rounded-md bg-[#292929] px-3 text-xs hover:bg-black hover:text-white">
                 Atpakaļ
               </Button>
             </Link>
