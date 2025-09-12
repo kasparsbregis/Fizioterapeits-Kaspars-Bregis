@@ -79,20 +79,20 @@ const FAQ = () => {
             <AccordionContent>
               <div className="flex flex-col">
                 <p>
-                  <span className="font-semibold">Pirmdiena:</span> 10:00-19:00
+                  <span className="font-semibold">Pirmdiena:</span> 08:00-16:00
                 </p>
                 <p>
-                  <span className="font-semibold">Otrdiena:</span> 08:00-18:00
+                  <span className="font-semibold">Otrdiena:</span> 08:00-16:00
                 </p>
                 <p>
-                  <span className="font-semibold">Trešdiena:</span> 09:00-18:00
+                  <span className="font-semibold">Trešdiena:</span> 08:00-16:00
                 </p>
                 <p>
                   <span className="font-semibold">Ceturtdiena:</span>{" "}
-                  09:00-18:00
+                  08:00-15:00
                 </p>
                 <p>
-                  <span className="font-semibold">Piektdiena:</span> 08:00-17:00
+                  <span className="font-semibold">Piektdiena:</span> 08:00-15:00
                 </p>
                 <p>
                   <span className="font-semibold">Sestdiena:</span> Brīvs
