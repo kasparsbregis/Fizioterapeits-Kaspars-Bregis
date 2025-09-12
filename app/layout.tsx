@@ -69,18 +69,11 @@ export default function RootLayout({
         <link rel="dns-prefetch" href="https://tile.openstreetmap.org" />
 
         {/* Preload critical resources */}
-        <link
-          rel="preload"
-          href="/fonts/DMSansVF.ttf"
-          as="font"
-          type="font/ttf"
-          crossOrigin="anonymous"
-        />
-        <link
+        {/* <link
           rel="preload"
           href="/kasparsbregisfizioterapeits7.png"
           as="image"
-        />
+        /> */}
 
         {/* Google Tag Manager - Deferred */}
         <Script

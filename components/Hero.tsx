@@ -28,12 +28,10 @@ const Hero = () => {
               <Image
                 src={"/kasparsbregisfizioterapeits8.png"}
                 alt="Kaspars Bregis"
-                width={180}
-                height={400}
-                className="size-auto"
+                width={140}
+                height={200}
+                className="w-auto"
                 priority
-                quality={85}
-                sizes="(max-width: 768px) 180px, (max-width: 1200px) 180px, 180px"
               />
             </div>
           </div>

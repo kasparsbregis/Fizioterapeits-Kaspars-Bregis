@@ -10,7 +10,7 @@ const CallToAction = () => {
     <BlurFade
       inView
       delay={0.2}
-      className="mt-24 flex w-full flex-col items-center px-6 "
+      className="mt-24 flex w-full flex-col items-center px-6"
     >
       <div className="flex w-full max-w-4xl items-center justify-between rounded-3xl bg-gradient-to-r from-red-500 to-orange-500 px-6 shadow-xl">
         <div className="flex w-4/5 flex-col items-center justify-center gap-6">
@@ -27,6 +27,7 @@ const CallToAction = () => {
             alt="Kaspars Bregis"
             width={150}
             height={150}
+            className="w-auto"
           />
         </div>
       </div>
