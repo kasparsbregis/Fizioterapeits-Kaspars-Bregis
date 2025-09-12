@@ -77,14 +77,14 @@ const Pieteikties = () => {
             </a>
           </div>
           <Image
-            src="/kabinets3.png"
+            src="/kabinets3.jpg"
             alt="Fizioterapeita kabinets"
             width={800}
             height={60}
             className="rounded-xl"
           />
 
-          <div className="mt-16 flex w-full max-w-7xl flex-col items-start gap-16 md:flex-row md:gap-4 ">
+          <div className="mt-16 flex w-full max-w-7xl flex-col items-start gap-16 md:flex-row md:gap-4">
             <div className="flex w-full flex-col items-center gap-3 md:gap-0">
               <h2 className="section-title text-[24px] tracking-tight">
                 Cenrādis
@@ -104,7 +104,7 @@ const Pieteikties = () => {
 
           <div className="mt-8 flex max-w-7xl gap-3">
             <Link href="/">
-              <Button className="rounded-md bg-[#292929] px-3  text-xs hover:bg-black hover:text-white">
+              <Button className="rounded-md bg-[#292929] px-3 text-xs hover:bg-black hover:text-white">
                 Atpakaļ
               </Button>
             </Link>
