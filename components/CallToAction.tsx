@@ -25,8 +25,8 @@ const CallToAction = () => {
           <Image
             src={"/kasparsbregisfizioterapeits7.png"}
             alt="Kaspars Bregis"
-            width={150}
-            height={150}
+            width={120}
+            height={120}
             className="w-auto"
           />
         </div>
