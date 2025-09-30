@@ -66,15 +66,19 @@ const Pieteikties = () => {
           className="mt-6 flex max-w-7xl flex-col items-center px-6"
         >
           <div className="flex max-w-7xl flex-col items-center">
-            <h1 className="text-center text-[24px] leading-[30px] tracking-tight text-[#010D3E]">
-              Piesakieties, zvanot pa tālruni{" "}
+            <h1 className="max-w-4xl pb-4 text-center text-4xl font-bold tracking-tight text-red-500">
+              Atvainojos, bet liela pieprasījuma dēļ, grafiks līdz decembrim ir
+              pilns!
             </h1>
-            <a
+            {/* <h1 className="text-center text-[24px] leading-[30px] tracking-tight text-[#010D3E]">
+              Piesakieties, zvanot pa tālruni{" "}
+            </h1> */
+            /* <a
               href="tel:+37126779084"
               className="text-[30px] font-bold leading-relaxed"
             >
               <span className="text-[24px]">+371</span> 26779084
-            </a>
+            </a> */}
           </div>
           <Image
             src="/kabinets3.jpg"
